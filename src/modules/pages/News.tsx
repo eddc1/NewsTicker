@@ -7,6 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import NewsTicker from '../components/News/NewsTicker/NewsTicker';
 import TopNews from '../components/News/NewsTicker/TopNews';
+import GameList from '../components/News/NewsTicker/GameList';
 
 const box = {
   flexGrow: 1,
@@ -105,7 +106,7 @@ function News() {
                 <TopNews/>
               </TabPanel>
               <TabPanel value={value} index={2}>
-                Item Three
+                <GameList/>
               </TabPanel>
               <TabPanel value={value} index={3}>
                 Item 4
