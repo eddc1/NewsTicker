@@ -1,7 +1,7 @@
 import { Box, ListItemButton, ListItemIcon, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../Typography';
+import Typography from '../../../components/Typography';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import HardwareIcon from '@mui/icons-material/Hardware';

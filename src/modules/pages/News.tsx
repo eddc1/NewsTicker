@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import NewsTicker from '../components/News/NewsTicker';
+import NewsTicker from '../components/News/NewsTicker/NewsTicker';
 
 const box = {
   flexGrow: 1,

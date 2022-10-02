@@ -1,7 +1,7 @@
 import { Box, ButtonBase } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../Typography';
+import Typography from '../../../components/Typography';
 import { styled } from '@mui/material/styles';
 import DayNewsList from './DayNewsList';
 import AdNewsList from './AdNewsList';

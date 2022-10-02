@@ -1,6 +1,6 @@
 import { Box, ButtonBase, Button, ListItemButton } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import Typography from '../Typography';
+import Typography from '../../../components/Typography';
 import { styled } from '@mui/material/styles';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
