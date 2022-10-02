@@ -153,7 +153,7 @@ const itemData = [
     },
     {
         img: 'https://images.cgames.de/images/gamestar/256/cod-m…en-invasion-modus-f%C3%BCr-40-spieler_6196935.jpg',
-        title: 'CoD MW2 Beta-Gameplay: GameStar im neuen Invasion-Modus für 40 Spieler',
+        title: 'CoD MW2 Beta-Gameplay: GameEye im neuen Invasion-Modus für 40 Spieler',
         date: '27.09.2022'
       },
   ];

@@ -9,7 +9,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import ImageIcon from '@mui/icons-material/Image';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import AdTechList from './AdNewsList/AdTechList';
+import AdVideoList from './AdNewsList/AdVideoList';
 
 const box = {
     flexGrow: 1,
@@ -49,7 +49,7 @@ const daynewslist = {
 }
 
 
-function TechList() {
+function VideoList() {
   return (
     <Box
       component="section"
@@ -115,7 +115,7 @@ function TechList() {
                     </Grid>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdTechList/>
+                    <AdVideoList/>
                 </Grid>
             </Grid>
         </Grid>
@@ -125,49 +125,19 @@ function TechList() {
 
 const contentListFriday = [
     {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Arc A770: Trailer zeigt Raytracing und Upscaling-Technologie der Intel-Grafikkarte'
+        time: '20:44',
+        icon: <PlayCircleIcon/>,
+        title: 'Endlich kann Vali den Wilden Westen ohne Zeitdruck erkunden - Unsere Relax Games Teil 3'
     },
     {
         time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'iPhone 14 Pro - Das neue iPhone im Vergleich mit dem Samsung Galaxy S22 Ultra'
+        icon: <PlayCircleIcon/>,
+        title: '14 geniale und manchmal auch fiese Twists in Spielen'
     },
     {
         time: '20:43',
-        icon: <HardwareIcon/>,
-        title: ' Windows 11 - Fünf Wege, einen Screenshot zu erstellen'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'WQHD-Kraftpaket - Für nur 999€ RTX 3060-Grafik und Ryzen 5 5600X im GameEye-PC Silber Edition'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Arc Alchemist - Intel sagt Nvidia und AMD mit seinen Grafikkarten-Preisen den Kampf an'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Apple-CEO Tim Cook - Ihr werdet "euch bald fragen, wie ihr ohne Augmented Reality leben konntet"'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Google Stadia - Spieledienst wird endgültig eingestellt, alle Käufe erstattet'
-    },
-    {
-        time: '20:43',
-        icon: '',
-        title: 'WoW Dragonflight - Das neue Addon hat einen Release-Termin im November'
-    },
-    {
-        time: '20:43',
-        icon: <ShoppingCartIcon/>,
-        title: 'Samsung QD OLED TVs - Sichert euch über 1000€ Rabatt auf PS5 Fernseher bei MediaMarkt'
+        icon: <PlayCircleIcon/>,
+        title: 'Total War: Warhammer 3 - Das steckt wohl hinter dem kryptischen Trailer zum neuen Modus'
     },
     {
         time: '20:43',
@@ -181,47 +151,16 @@ const contentListFriday = [
     },
     {
         time: '20:43',
-        icon: <ShoppingCartIcon/>,
-        title: 'FIFA 23 - im Bundle mit Xbox Series S bei Saturn nur 259€'
-    },
-    {
-        time: '20:43',
         icon: <PlayCircleIcon/>,
         title: 'Neue Spiele im Oktober - Vorschau-Video für PC und Konsolen'
     },
-    {
-        time: '20:43',
-        icon: <ShoppingCartIcon/>,
-        title: 'Nur noch wenige Tage bis Overwatch 2, hier seht ihr was alles im Release-Paket steckt'
-    },
-    
   ];
 
   const contentListThursday = [
     {
         time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Meinung zu Fitnesstracker - Ich habe ein Fitnessarmband ausprobiert und es hat mich fast in den Wahnsinn getrieben'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'RTX 4080 - Meinung: Wer soll diese beiden Grafikkarten überhaupt kaufen, Nvidia?'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Upgrade auf Windows 11 - Ja oder nein? 6 Gründe dafür und dagegen'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Overwatch 2 - Wir zeigen euch die neue Circuit Royal Map'
-    },
-    {
-        time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Megaprojekt auf See - Dieses Schiff ist so groß, dass selbst die Titanic darin vier Mal Platz fände'
+        icon: <PlayCircleIcon/>,
+        title: 'Wrath of the Righteous: Das Weltklasse-Rollenspiel hat ab sofort eine noch bessere Version'
     },
     {
         time: '20:43',
@@ -230,8 +169,8 @@ const contentListFriday = [
     },
     {
         time: '20:43',
-        icon: <HardwareIcon/>,
-        title: 'Next-Gen-Gaming - Ist das der nächste Schritt? Nvidia zeigt Benchmarks in utopischer 8K-Auflösung'
+        icon: <DiamondIcon/>,
+        title: 'Gratis bei Epic - Für wen lohnen sich die zwei kostenlosen Spiele?'
     },
     {
         time: '20:43',
@@ -279,4 +218,4 @@ const contentListFriday = [
 
   
 
-export default TechList;
+export default VideoList;

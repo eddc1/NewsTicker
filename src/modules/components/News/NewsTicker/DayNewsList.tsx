@@ -155,7 +155,7 @@ const contentListFriday = [
     {
         time: '20:43',
         icon: <HardwareIcon/>,
-        title: 'WQHD-Kraftpaket - Für nur 999€ RTX 3060-Grafik und Ryzen 5 5600X im GameStar-PC Silber Edition'
+        title: 'WQHD-Kraftpaket - Für nur 999€ RTX 3060-Grafik und Ryzen 5 5600X im GameEye-PC Silber Edition'
     },
     {
         time: '20:43',

@@ -9,6 +9,7 @@ import NewsTicker from '../components/News/NewsTicker/NewsTicker';
 import TopNews from '../components/News/NewsTicker/TopNews';
 import GameList from '../components/News/NewsTicker/GameList';
 import TechList from '../components/News/NewsTicker/TechList';
+import VideoList from '../components/News/NewsTicker/VideoList';
 
 const box = {
   flexGrow: 1,
@@ -113,7 +114,7 @@ function News() {
                 <TechList/>
               </TabPanel>
               <TabPanel value={value} index={4}>
-                Item 5
+                <VideoList/>
               </TabPanel>
               <TabPanel value={value} index={5}>
                 Item 6

@@ -71,8 +71,8 @@ function AdTechList() {
                 </Grid>
                 <Grid item xs={12}>
                     <Box sx={{ width: 'auto', height: 'auto', backgroundColor: "#f2f7fc", paddingRight: 2, paddingLeft: 2, paddingBottom: 2 }}>
-                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>Aktuelle Spiele-News auf GameEye</Typography>
-                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Alle News, Artikel und Videos zu PC-Spielen im Überblick. Bleibe bei Games-Themen immer auf dem neuesten Stand.
+                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>Tech-News | GameEye Tech</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Bleib auf dem neuesten Stand im Tech- &amp; Hardware-Bereich: Egal ob neue Produkte, Treiber, Technologien, Softwareupdates oder Apps.
                             </Typography>
                     </Box>
                 </Grid>

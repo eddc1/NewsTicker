@@ -54,7 +54,7 @@ const container = {
     paddingRight: 0,
 }
 
-function AdNewsTicker() {
+function AdVideoList() {
   return (
     <Box
       component="section"
@@ -71,8 +71,9 @@ function AdNewsTicker() {
                 </Grid>
                 <Grid item xs={12}>
                     <Box sx={{ width: 'auto', height: 'auto', backgroundColor: "#f2f7fc", paddingRight: 2, paddingLeft: 2, paddingBottom: 2 }}>
-                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>GameEye News: Alles zu PC-Spielen und Hardware</Typography>
-                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Egal ob News, Artikel oder Video: Hier findet ihr alle aktuellen Meldungen im Überblick.</Typography>
+                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>Aktuelle Video-News auf GameEye</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Trailer, Gameplay-Clips und Test-Videos in der Übersicht: Alle GameEye-Inhalte nach Videos gefiltert.
+                            </Typography>
                     </Box>
                 </Grid>
                 {/* <Grid item sx={container} container direction="column">
@@ -229,4 +230,4 @@ const contentListTopArtikelVideo = [
 
   
 
-export default AdNewsTicker;
+export default AdVideoList;
