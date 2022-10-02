@@ -9,7 +9,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import ImageIcon from '@mui/icons-material/Image';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import AdNewsList from './AdNewsList';
+import AdGameList from './AdNewsList/AdGameList';
 
 const box = {
     flexGrow: 1,
@@ -115,7 +115,7 @@ function GameList() {
             </Grid>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdNewsList/>
+                    <AdGameList/>
                 </Grid>
             </Grid>
         </Grid>

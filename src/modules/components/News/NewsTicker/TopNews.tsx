@@ -2,9 +2,7 @@ import { Box, ButtonBase, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../../../components/Typography';
-import { styled } from '@mui/material/styles';
-import DayNewsList from './DayNewsList';
-import AdNewsList from './AdNewsList';
+import AdTopNews from './AdNewsList/AdTopNews';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const box = {
@@ -210,7 +208,7 @@ function TopNews() {
                     </Grid>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdNewsList/>
+                    <AdTopNews/>
                 </Grid>
             </Grid>
         </Grid>

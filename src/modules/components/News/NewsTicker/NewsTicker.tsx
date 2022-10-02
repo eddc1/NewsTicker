@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 import Typography from '../../../components/Typography';
 import { styled } from '@mui/material/styles';
 import DayNewsList from './DayNewsList';
-import AdNewsList from './AdNewsList';
+import AdNewsTicker from './AdNewsList/AdNewsTicker';
 
 const box = {
     flexGrow: 1,
@@ -120,7 +120,7 @@ function NewsTicker() {
                     <DayNewsList/>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdNewsList/>
+                    <AdNewsTicker/>
                 </Grid>
             </Grid>
         </Grid>

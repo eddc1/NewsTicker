@@ -342,27 +342,6 @@ const contentListFriday = [
         icon: <ShoppingCartIcon/>,
         title: 'Gaming Laptop mit RTX 3060 - DLSS und 120 Hz: Lenovo IdeaPad 3 für nur 999€ im Angebot'
     },
-    {
-        time: '20:43',
-        icon: <PlayCircleIcon/>,
-        title: 'Amazon Astro - Der kleine Roboter soll sich nun auch um Einbrecher kümmern können'
-    },
-    {
-        time: '20:43',
-        icon: <PlayCircleIcon/>,
-        title: 'Halo Rise - Jetzt möchte Amazon euch auch noch aus dem Schlaf wecken'
-    },
-    {
-        time: '20:43',
-        icon: <PlayCircleIcon/>,
-        title: 'PlayCircleIcon'
-    },
-    {
-        time: '20:43',
-        icon: '',
-        title: 'Cyberpunk 2077 - Neue Verkaufszahlen: Auf dem besten Weg, The Witcher 3 einzuholen'
-    },
-    
   ];
 
 
