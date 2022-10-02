@@ -79,10 +79,6 @@ const daynewslist = {
     backgroundColor: 'rgba(white)',
 }
 
-const itemBox = {
-}
-
-
 
 function NewsTicker() {
   return (
