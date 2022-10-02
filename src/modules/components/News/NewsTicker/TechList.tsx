@@ -9,7 +9,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import ImageIcon from '@mui/icons-material/Image';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import AdGameList from './AdNewsList/AdGameList';
+import AdTechList from './AdNewsList/AdTechList';
 
 const box = {
     flexGrow: 1,
@@ -49,7 +49,7 @@ const daynewslist = {
 }
 
 
-function GameList() {
+function TechList() {
   return (
     <Box
       component="section"
@@ -115,7 +115,7 @@ function GameList() {
                     </Grid>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdGameList/>
+                    <AdTechList/>
                 </Grid>
             </Grid>
         </Grid>
@@ -125,54 +125,39 @@ function GameList() {
 
 const contentListFriday = [
     {
-        time: '20:44',
-        icon: <PlayCircleIcon/>,
-        title: 'Endlich kann Vali den Wilden Westen ohne Zeitdruck erkunden - Unsere Relax Games Teil 3'
+        time: '20:43',
+        icon: <HardwareIcon/>,
+        title: 'Arc A770: Trailer zeigt Raytracing und Upscaling-Technologie der Intel-Grafikkarte'
     },
     {
         time: '20:43',
-        icon: <CurrencyBitcoinIcon/>,
-        title: 'FIFA 23 - Test: EAs letzter Teil der Reihe ist fast ein Volltreffer'
+        icon: <HardwareIcon/>,
+        title: 'iPhone 14 Pro - Das neue iPhone im Vergleich mit dem Samsung Galaxy S22 Ultra'
     },
     {
         time: '20:43',
-        icon: <ShoppingCartIcon/>,
-        title: 'Arc A770 - Intels Grafikkarte hat endlich einen Releasetermin'
+        icon: <HardwareIcon/>,
+        title: ' Windows 11 - Fünf Wege, einen Screenshot zu erstellen'
     },
     {
         time: '20:43',
-        icon: <DiamondIcon/>,
-        title: 'Kostenlos bei Steam & Epic - Am langen Wochenende sind 8 Spiele gratis'
+        icon: <HardwareIcon/>,
+        title: 'WQHD-Kraftpaket - Für nur 999€ RTX 3060-Grafik und Ryzen 5 5600X im GameStar-PC Silber Edition'
     },
     {
         time: '20:43',
-        icon: '',
-        title: 'Ringe der Macht - Folge 6 schafft es zum ersten Mal, mich zu überraschen'
+        icon: <HardwareIcon/>,
+        title: 'Arc Alchemist - Intel sagt Nvidia und AMD mit seinen Grafikkarten-Preisen den Kampf an'
     },
     {
         time: '20:43',
-        icon: '',
-        title: 'Beyond Good & Evil 2 - Es bricht einen traurigen Rekord, der für die Ewigkeit zu sein schien'
+        icon: <HardwareIcon/>,
+        title: 'Apple-CEO Tim Cook - Ihr werdet "euch bald fragen, wie ihr ohne Augmented Reality leben konntet"'
     },
     {
         time: '20:43',
-        icon: <PlayCircleIcon/>,
-        title: '14 geniale und manchmal auch fiese Twists in Spielen'
-    },
-    {
-        time: '20:43',
-        icon: '',
-        title: 'Dragon Age: Dreadwolf - Bioware liefert wohl genau den Drachen, von dem ich immer geträumt habe'
-    },
-    {
-        time: '20:43',
-        icon: <ImageIcon/>,
-        title: 'One More Gate : A Wakfu Legend - Screenshots'
-    },
-    {
-        time: '20:43',
-        icon: <PlayCircleIcon/>,
-        title: 'Total War: Warhammer 3 - Das steckt wohl hinter dem kryptischen Trailer zum neuen Modus'
+        icon: <HardwareIcon/>,
+        title: 'Google Stadia - Spieledienst wird endgültig eingestellt, alle Käufe erstattet'
     },
     {
         time: '20:43',
@@ -214,29 +199,29 @@ const contentListFriday = [
 
   const contentListThursday = [
     {
-        time: '20:44',
-        icon: '',
-        title: 'Brewmaster - Simulations-Fans dürfen endlich selber Bier brauen, aber macht das Spaß?'
+        time: '20:43',
+        icon: <HardwareIcon/>,
+        title: 'Meinung zu Fitnesstracker - Ich habe ein Fitnessarmband ausprobiert und es hat mich fast in den Wahnsinn getrieben'
     },
     {
         time: '20:43',
-        icon: <ImageIcon/>,
-        title: 'Brewmaster: Screenshots aus der Bierbrau-Simulation'
+        icon: <HardwareIcon/>,
+        title: 'RTX 4080 - Meinung: Wer soll diese beiden Grafikkarten überhaupt kaufen, Nvidia?'
     },
     {
         time: '20:43',
-        icon: '',
-        title: 'Prime Gaming - Im Oktober gibt es hochwertige Kost für Warhammer- und Mittelerde-Fans geschenk'
+        icon: <HardwareIcon/>,
+        title: 'Upgrade auf Windows 11 - Ja oder nein? 6 Gründe dafür und dagegen'
     },
     {
         time: '20:43',
-        icon: <PlayCircleIcon/>,
-        title: 'Wrath of the Righteous: Das Weltklasse-Rollenspiel hat ab sofort eine noch bessere Version'
+        icon: <HardwareIcon/>,
+        title: 'Overwatch 2 - Wir zeigen euch die neue Circuit Royal Map'
     },
     {
         time: '20:43',
-        icon: '',
-        title: 'Fallout - So habt ihr es noch nie gesehen: KI verleiht 25 Jahre alten Figuren neuen Glan'
+        icon: <HardwareIcon/>,
+        title: 'Megaprojekt auf See - Dieses Schiff ist so groß, dass selbst die Titanic darin vier Mal Platz fände'
     },
     {
         time: '20:43',
@@ -245,8 +230,8 @@ const contentListFriday = [
     },
     {
         time: '20:43',
-        icon: <DiamondIcon/>,
-        title: 'Gratis bei Epic - Für wen lohnen sich die zwei kostenlosen Spiele?'
+        icon: <HardwareIcon/>,
+        title: 'Next-Gen-Gaming - Ist das der nächste Schritt? Nvidia zeigt Benchmarks in utopischer 8K-Auflösung'
     },
     {
         time: '20:43',
@@ -294,4 +279,4 @@ const contentListFriday = [
 
   
 
-export default GameList;
+export default TechList;

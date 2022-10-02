@@ -301,7 +301,6 @@ const contentListFriday = [
         icon: '',
         title: 'Dead Space - Neue Screenshots zeigen mehr von der Remake-Grafikpracht'
     },
-
     {
         time: '20:43',
         icon: <HardwareIcon/>,
