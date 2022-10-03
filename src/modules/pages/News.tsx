@@ -117,7 +117,7 @@ function News() {
                 <VideoList/>
               </TabPanel>
               <TabPanel value={value} index={5}>
-                Item 6
+                Weiter leiten zu Artikel Deals &amp; Sells
               </TabPanel>
             </Box>
           </Grid>

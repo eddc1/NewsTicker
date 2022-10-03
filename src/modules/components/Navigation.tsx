@@ -188,7 +188,7 @@ export default function PrimarySearchAppBar() {
             underline="none"
             href="#"
             sx={{ display: { xs: 'none', sm: 'block', paddingRight: '1rem' } }}>
-              VIDEO
+              VIDEOS
             </Link>
             <Link
             variant="h6"

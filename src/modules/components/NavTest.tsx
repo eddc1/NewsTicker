@@ -8,7 +8,7 @@ import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import Typography from './Typography';
 
-const pages = ["Spiele", "News", "Video", "Artikel", "Crypto", "Community"]
+const pages = ["Spiele", "News", "Videos", "Artikel", "Crypto", "Community"]
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
