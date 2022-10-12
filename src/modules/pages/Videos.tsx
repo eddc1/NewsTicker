@@ -2,9 +2,9 @@ import { Box, ButtonBase, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import DayNewsList from '../components/News/NewsTicker/DayNewsList';
-import { Link } from 'react-router-dom';
+import VideosToday from '../components/Videos/VideosToday';
 import VideosHead from '../components/Videos/VideosHead';
+import AdVideosToday from '../components/Videos/AdVideosToday';
 
 const mainContainer = {
     display: 'flex, block',
@@ -62,10 +62,10 @@ function Videos() {
                 <Grid item xs={12} container>
                     <Grid item container direction="row" spacing={0}>
                         <Grid item sx={daynewslist} xs={8}>
-                            <DayNewsList/>
+                            <VideosToday/>
                         </Grid>
                         <Grid item sx={gridimg} xs={4}>
-                            {/* <AdVideo/> */}
+                            <AdVideosToday/>
                         </Grid>
                     </Grid>
                 </Grid>
