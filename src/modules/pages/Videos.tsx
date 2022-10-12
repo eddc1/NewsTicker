@@ -25,6 +25,7 @@ const box = {
     flexGrow: 1,
     width: '100%',
     overflow: 'hidden',
+    paddingBottom: 10,
     margin: 'auto',
     maxWidth: '100%',
     justifyContent: 'center',
@@ -60,7 +61,7 @@ function Videos() {
                 <VideosHead/>
             </Box>
                 <Grid item xs={12} container>
-                    <Grid item container direction="row" spacing={0}>
+                    <Grid item container direction="row">
                         <Grid item sx={daynewslist} xs={8}>
                             <VideosToday/>
                         </Grid>
