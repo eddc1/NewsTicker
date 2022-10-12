@@ -4,6 +4,7 @@ import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import DayNewsList from '../components/News/NewsTicker/DayNewsList';
 import { Link } from 'react-router-dom';
+import VideosHead from '../components/Videos/VideosHead';
 
 const mainContainer = {
     display: 'flex, block',
@@ -35,47 +36,6 @@ const box = {
         },
 }
 
-const btn = {
-    backgroundColor: 'primary.dark',
-    fontSize: 20,
-    marginTop: 3,
-    flexGrow: 1,
-    '&:hover': {
-      backgroundColor: 'blue'
-    }
-}
-
-
-const container = {
-    display: 'flex',
-    position: 'relative',
-    paddingBottom: 4,
-}
-
-const grid = {
-    paddingBottom: 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-    direction: 'row',
-      box: {
-        display: 'block'
-      }
-  }
-
-const typography = {
-    display: 'block',
-    marginBlockStart: '1em',
-    marginBlockEnd: '1em',
-    marginInlineStart: '0px',
-    marginInlineEnd: '0px',
-    color: 'rgba(33,33,33,.75)'
-  }
-  
-const btnbase = {
-    width: 'auto',
-    height: 'auto'
-}
-  
 
 const gridimg = {
     backgroundColor: 'rgba(white)', // farbe = 0,0,0,.1
@@ -96,86 +56,9 @@ function Videos() {
         <Box
         component="section"
         sx={box}>
-            <Grid sx={{ pb: 4 }} xs={12}>
-                <Grid item xs={12}>
-                    <Typography variant='subtitle1'>GameStar Videos: alle Shows, Trailer &amp; Kanäle</Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Typography sx={typography} variant='body1'>Auf unserer Video-Übersicht findest du alle Videos der GameStar-Redaktion (Tests, Previews, Events bzw. alle redaktionellen Videos) sowie aktuelle Trailer zu Spielen und Kino-Filmen. Zusätzlich gibt es regelmäßige Shows, Special-Formate und Videos von ausgewählten Partner-Kanälen.</Typography>
-                </Grid>
-            </Grid>
-            <Grid container
-                direction="row"
-                justifyContent="center"
-                pb={6}>
-                {topHeaderData.map((item) => (
-                    <Container sx={container}>
-                        <Grid
-                            sx={grid}
-                            container
-                            spacing={6}>
-                            <Grid item sm={12} md={8}>
-                                <ButtonBase sx={btnbase}>
-                                    <Box 
-                                        component="img"
-                                        src={`${item.img}?w=248&fit=crop&auto=format`}
-                                        srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                        alt="suitcase"
-                                        sx={box.button}
-                                    />
-                                </ButtonBase>
-                            </Grid>
-                            <Grid item sm={12} md={4}>
-                                <Box sx={grid.box}>
-                                    <Typography variant="subtitle1">
-                                    {`${item.title}`}
-                                    </Typography>
-                                    <Typography sx={typography}>
-                                    {`${item.text}`}
-                                    </Typography>
-                                    <Button 
-                                    component={Link} to="/News"
-                                    sx={btn}
-                                    onClick={() => console.log('Go to News')}
-                                    type="submit"
-                                    color="secondary"
-                                    variant="contained"
-                                    title="Mehr"
-                                    >MEHR
-                                    </Button>
-                                </Box>
-                            </Grid>
-                        </Grid>
-                    </Container>
-                    
-                ))}
-                <Container sx={container}>
-                    <Grid 
-                            container
-                            direction="row"
-                            justifyContent="center"
-                            pb={6}
-                            spacing={2}>
-                        {itemData.map((item) => (
-                        <Grid item sx={grid} sm={12} md={4}>
-                            <Box sx={item}>
-                                <Box
-                                component="img"
-                                src={`${item.img}?w=248&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                sx={box.button}
-                                /> {/* width=446px und height=251px */}
-                                <Typography variant="subtitle2" pt={2}>
-                                {`${item.title}`}
-                                </Typography>
-                                <Typography sx={typography}>                
-                                {`${item.text}`}
-                                </Typography>
-                            </Box>
-                        </Grid>
-                        ))}
-                    </Grid>
-                </Container>
+            <Box>
+                <VideosHead/>
+            </Box>
                 <Grid item xs={12} container>
                     <Grid item container direction="row" spacing={0}>
                         <Grid item sx={daynewslist} xs={8}>
@@ -186,7 +69,6 @@ function Videos() {
                         </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
         </Box>
     </Container>
   );
