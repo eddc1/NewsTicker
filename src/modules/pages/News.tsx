@@ -86,7 +86,7 @@ function News() {
               direction="row"
               justifyContent="center"
               pb={6}>
-          <Grid item sx={{ mb: 6 }} xs={12}>
+          <Grid item sx={{ mb: 2 }} xs={12}>
             <Typography variant='h4'>Newsticker: Alle Inhalte im Überblick</Typography>
           </Grid>
           <Grid item sx={{ mb: 3 }} xs={12}>

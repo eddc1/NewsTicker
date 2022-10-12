@@ -1,6 +1,6 @@
 import { Box, ButtonBase, Button, ListItemButton } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import Typography from '../../components/Typography';
+import Typography from '../../Typography';
 import { styled } from '@mui/material/styles';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
@@ -54,9 +54,7 @@ const container = {
     paddingRight: 0,
 }
 
-
-
-function AdVideosToday() {
+function AdArtikelTest() {
   return (
     <Box
       component="section"
@@ -73,14 +71,23 @@ function AdVideosToday() {
                 </Grid>
                 <Grid item xs={12}>
                     <Box sx={{ width: 'auto', height: 'auto', backgroundColor: "#f2f7fc", paddingRight: 2, paddingLeft: 2, paddingBottom: 2 }}>
-                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>GameEye Videos: Alle aktuellen Videos im Überblick</Typography>
-                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Egal ob News, Artikel oder Video: Hier findet ihr alle aktuellen Meldungen im Überblick.</Typography>
+                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>GameEye-Tests: Reviews zu Spielen und Hardware</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Alle Testartikel im Überblick, egal ob Spiel oder Hardware-Produkt. Diese Übersicht zeigt alle Reviews mit Wertungen.
+                            </Typography>
                     </Box>
                 </Grid>
+                {/* <Grid item sx={container} container direction="column">
+                    <Grid item sx={gridimg.bigad} xs={5}>
+                        <ButtonBase sx={gridimg.ad}>
+                            <Img alt="Wow" src="https://images.cgames.de/images/gamestar/4/wow-promo-3-klein_6197062.jpg">
+                            </Img>
+                        </ButtonBase>
+                    </Grid>
+                </Grid> */}
                 <Grid item sx={container}  >
                     <Grid item sx={container} container direction="row">
                         <Grid item xs={6}>
-                                <Typography variant='subtitle1' sx={box.headline}>Hot-Videos</Typography>
+                                <Typography variant='subtitle1' sx={box.headline}>Top-Artikel</Typography>
                         </Grid>
                         <Grid item xs={6}>
                                 <Button sx={box.button}>alle anzeigen</Button>
@@ -128,10 +135,10 @@ function AdVideosToday() {
                 </Grid>
                 <Grid item sx={container}  >
                     <Grid item sx={container} container direction="row">
-                        <Grid item xs={6}>
-                                <Typography variant='subtitle1' sx={box.headline}>Top-Video</Typography>
+                        <Grid item xs={7}>
+                                <Typography variant='subtitle1' sx={box.headline}>Aktuelle Tests</Typography>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={5}>
                                 <Button sx={box.button}>alle anzeigen</Button>
                         </Grid>
                     </Grid>
@@ -223,4 +230,4 @@ const contentListTopArtikelVideo = [
 
   
 
-export default AdVideosToday;
+export default AdArtikelTest;
