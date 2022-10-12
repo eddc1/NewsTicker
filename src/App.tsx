@@ -11,7 +11,6 @@ import News from './modules/pages/News';
 import Videos from './modules/pages/Videos';
 import Artikel from './modules/pages/Artikel';
 import Crypto from './modules/pages/Crypto';
-import Community from './modules/pages/Community';
 import Tech from './modules/pages/Tech';
 
 
@@ -29,7 +28,6 @@ function App() {
             <Route path="Artikel" element={<Artikel />} />
             <Route path="Tech" element={<Tech />} />
             <Route path="Crypto" element={<Crypto />} />
-            <Route path="Community" element={<Community />} />
           </Routes>
         <AppFooter/>
     </ThemeProvider>

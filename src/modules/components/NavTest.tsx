@@ -8,7 +8,7 @@ import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import Typography from './Typography';
 
-const pages = ["Spiele", "News", "Videos", "Artikel", "Tech", "Crypto", "Community"]
+const pages = ["Spiele", "News", "Videos", "Artikel", "Tech", "Crypto"]
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -84,7 +84,7 @@ export default function PrimarySearchAppBar() {
       anchorEl={anchorEl}
       anchorOrigin={{
         vertical: 'top',
-        horizontal: 'right',
+        horizontal: 'left',
       }}
       id={menuId}
       keepMounted
@@ -141,17 +141,9 @@ export default function PrimarySearchAppBar() {
       </MenuItem>
       */}
       <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
         <p>Profile</p>
       </MenuItem>
+
     </Menu>
   );
 // Mobile Ende
