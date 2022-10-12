@@ -73,11 +73,15 @@ const gridimg = {
     justifyContent: 'center',
     alignItems: 'center',
     fontSize: '.875rem',
+    position: 'absolute',
+    zIndex: 'tooltip',
+    left: '66%',
 }
 
 const daynewslist = {
     backgroundColor: 'rgba(white)',
 }
+
 
 
 function NewsTicker() {
