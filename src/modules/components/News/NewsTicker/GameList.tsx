@@ -4,7 +4,6 @@ import Container from '@mui/material/Container';
 import Typography from '../../../components/Typography';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import HardwareIcon from '@mui/icons-material/Hardware';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import ImageIcon from '@mui/icons-material/Image';
