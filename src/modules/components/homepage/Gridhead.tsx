@@ -11,7 +11,6 @@ const box = {
   flexGrow: 1,
   width: '100%',
   overflow: 'hidden',
-  p: 2,
   margin: 'auto',
   maxWidth: '100%',
   justifyContent: 'center',
@@ -40,7 +39,6 @@ const container = {
 
 const grid = {
   paddingBottom: 2,
-  paddingRight: 5,
   alignItems: 'center',
   justifyContent: 'center',
   direction: 'row',
@@ -70,48 +68,52 @@ function Gridhead() {
       component="section"
       sx={box}>
           <Container sx={container}>
-            <Grid
+            {topHeaderData.map((item) => (
+              <Grid
                 sx={grid}
                 container
                 spacing={6}>
-              <Grid item sm={12} md={8}>
-                <ButtonBase sx={btnbase}>
-                <Box 
-                  component="img"
-                  src="https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg"
-                  alt="suitcase"
-                  sx={box.button}
-                />
-                </ButtonBase>
-            </Grid>
-            <Grid item sm={12} md={4}>
-              <Box sx={grid.box}>
-                <Typography variant="subtitle1">
-                  Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele
-                </Typography>
-                <br/>
-                <Typography sx={typography}>
-                  Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.
-                  </Typography>
-                  <Button 
-                  component={Link} to="/News"
-                  sx={btn}
-                  onClick={() => console.log('Go to News')}
-                  type="submit"
-                  color="secondary"
-                  variant="contained"
-                  title="Mehr"
-                  >MEHR</Button>
-                </Box>
-            </Grid>
-          </Grid>
+                <Grid item sm={12} md={8}>
+                  <ButtonBase sx={btnbase}>
+                  <Box 
+                    component="img"
+                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                    alt="suitcase"
+                    sx={box.button}
+                  />
+                  </ButtonBase>
+                </Grid>
+                <Grid item sm={12} md={4}>
+                  <Box sx={grid.box}>
+                    <Typography variant="subtitle1">
+                      {`${item.title}`}
+                    </Typography>
+                    <Typography sx={typography}>
+                      {`${item.text}`}
+                    </Typography>
+                    <Button 
+                      component={Link} to="/News"
+                      sx={btn}
+                      onClick={() => console.log('Go to News')}
+                      type="submit"
+                      color="secondary"
+                      variant="contained"
+                      title="Mehr"
+                      >MEHR
+                    </Button>
+                  </Box>
+                </Grid>
+              </Grid>
+            ))}
         </Container>
         <Container sx={container}>
           <Grid 
                 container
                 direction="row"
                 justifyContent="center"
-                pb={6}>
+                pb={6}
+                spacing={3}>
             {itemData.map((item) => (
             <Grid item sx={grid} sm={12} md={4}>
               <Box sx={item}>
@@ -135,6 +137,14 @@ function Gridhead() {
     </Box>
   );
 }
+
+const topHeaderData = [
+  {
+    img: 'https://images.cgames.de/images/gamestar/210/gs-steam-most-wanted_6146235.jpg',
+    title: 'Steam Wunschliste: Die aktuell meistgewünschten PC-Spiele',
+    text: 'Steam Most Wanted: Welche kommenden PC-Spiele werden am heißesten erwartet? Wir haben für euch die Top 15 der am meisten gewünschten Steam-Spiele zusammengefasst.',
+  },
+];
 
 
 const itemData = [
