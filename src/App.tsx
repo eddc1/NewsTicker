@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './modules/components/theme/theme';
+import theme from   './modules/components/theme/theme';
 import AppFooter from './modules/components/AppFooter';
 import NavTest from './modules/components/NavTest';
 import { Route, Routes } from "react-router";
