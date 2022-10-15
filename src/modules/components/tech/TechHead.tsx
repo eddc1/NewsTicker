@@ -79,15 +79,6 @@ function TechHead() {
         <Box
         component="section"
         sx={box}>
-            
-                <Grid sx={{ pb: 4 }} xs={12}>
-                    <Grid item xs={12}>
-                        <Typography variant='subtitle1'>GameStar Videos: alle Shows, Trailer &amp; Kanäle</Typography>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Typography sx={typography} variant='body1'>Auf unserer Video-Übersicht findest du alle Videos der GameStar-Redaktion (Tests, Previews, Events bzw. alle redaktionellen Videos) sowie aktuelle Trailer zu Spielen und Kino-Filmen. Zusätzlich gibt es regelmäßige Shows, Special-Formate und Videos von ausgewählten Partner-Kanälen.</Typography>
-                    </Grid>
-                </Grid>
             <Grid container
                 direction="row"
                 justifyContent="center"

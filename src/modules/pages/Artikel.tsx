@@ -5,11 +5,7 @@ import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import NewsTicker from '../components/News/NewsTicker/NewsTicker';
 import ArtikelTest from '../components/article/ArtikelTest';
-import GameList from '../components/News/NewsTicker/GameList';
-import TechList from '../components/News/NewsTicker/TechList';
-import VideoList from '../components/News/NewsTicker/VideoList';
 import Artikelubersicht from '../components/article/Artikelubersicht';
 import ArtikelPreviews from '../components/article/ArtikelPreviews';
 import ArtikelHitlisten from '../components/article/ArtikelHitlisten';
@@ -93,7 +89,7 @@ function Artikel() {
               justifyContent="center"
               pb={6}>
           <Grid item sx={{ mb: 2 }} xs={12}>
-            <Typography variant='h4'>Newsticker: Alle Inhalte im Überblick</Typography>
+            <Typography variant='h4'>Alle GameEye-Artikel im Übersicht</Typography>
           </Grid>
           <Grid item sx={{ mb: 3 }} xs={12}>
             <Box sx={{ width: '100%' }}>
