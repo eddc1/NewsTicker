@@ -67,8 +67,6 @@ export default function PrimarySearchAppBar() {
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
-  const menuId = 'primary-search-account-menu';
   
   //Mobile
 
@@ -111,7 +109,7 @@ export default function PrimarySearchAppBar() {
                 <Box component="img" sx={{width: 140, height: 50}} alt="logo-gameeye" src={Logo}/>
             </Link>
           </IconButton>
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center', paddingRight: '1rem' }}>
+          <Box sx={{ flex: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', paddingRight: '1rem' }}>
             {pages.map((page) => (
             <Typography>
                 <Link style={{ textDecoration: "none", color: "white", paddingRight: 30 }} to={`/${page}`}>
