@@ -5,16 +5,17 @@ import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import CryptoTest from '../components/crypto/CryptoTest';
-import Cryptoubersicht from '../components/crypto/Cryptoubersicht';
-import CryptoPreviews from '../components/crypto/CryptoPreviews';
-import CryptoHitlisten from '../components/crypto/CryptoHitlisten';
-import CryptoKolumnen from '../components/crypto/CryptoKolumnen';
-import CryptoSpecials from '../components/crypto/CryptoSpecials';
-import CryptoGuides from '../components/crypto/CryptoGuides';
+import ArtikelTest from '../components/article/ArtikelTest';
+import Artikelubersicht from '../components/article/Artikelubersicht';
+import ArtikelPreviews from '../components/article/ArtikelPreviews';
+import ArtikelHitlisten from '../components/article/ArtikelHitlisten';
+import ArtikelKolumnen from '../components/article/ArtikelKolumnen';
+import ArtikelSpecials from '../components/article/ArtikelSpecials';
+import ArtikelGuides from '../components/article/ArtikelGuides';
 
 const box = {
   flexGrow: 1,
+  width: '100%',
   overflow: 'hidden',
   p: 1,
   margin: 'auto',
@@ -69,7 +70,7 @@ function a11yProps(index: number) {
 }
 
 
-function Crypto() {
+function Datenschutzerklärung() {
 
   const [value, setValue] = React.useState(0);
 
@@ -88,7 +89,7 @@ function Crypto() {
               justifyContent="center"
               pb={6}>
           <Grid item sx={{ mb: 2 }} xs={12}>
-            <Typography variant='h4'>Alle GameEye-Crypto Inhalte im Überblick</Typography>
+            <Typography variant='h4'>Alle GameEye-Impressum im Übersicht</Typography>
           </Grid>
           <Grid item sx={{ mb: 3 }} xs={12}>
             <Box sx={{ width: '100%' }}>
@@ -104,25 +105,25 @@ function Crypto() {
                 </Tabs>
               </Box>
               <TabPanel value={value} index={0}>
-                <Cryptoubersicht/>
+                <Artikelubersicht/>
               </TabPanel>
               <TabPanel value={value} index={1}>
-                <CryptoTest/>
+                <ArtikelTest/>
               </TabPanel>
               <TabPanel value={value} index={2}>
-                <CryptoPreviews/>
+                <ArtikelPreviews/>
               </TabPanel>
               <TabPanel value={value} index={3}>
-                <CryptoHitlisten/>
+                <ArtikelHitlisten/>
               </TabPanel>
               <TabPanel value={value} index={4}>
-                <CryptoKolumnen/>
+                <ArtikelKolumnen/>
               </TabPanel>
               <TabPanel value={value} index={5}>
-                <CryptoSpecials/>
+                <ArtikelSpecials/>
               </TabPanel>
               <TabPanel value={value} index={6}>
-                <CryptoGuides/>
+                <ArtikelGuides/>
               </TabPanel>
             </Box>
           </Grid>
@@ -134,4 +135,4 @@ function Crypto() {
 
 
 
-export default Crypto;
+export default Datenschutzerklärung;

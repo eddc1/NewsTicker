@@ -51,7 +51,7 @@ const daynewslist = {
 }
 
 
-function Videos() {
+function Nutzungsbestimmungen() {
   return (
     <Container sx={mainContainer}> 
         <Box
@@ -75,5 +75,6 @@ function Videos() {
   );
 }
 
+  
 
-export default Videos;
+export default Nutzungsbestimmungen;

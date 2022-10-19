@@ -15,7 +15,7 @@ const box = {
     justifyContent: 'center',
     justifyItem: 'center',
         button: {
-        width: '100%',
+        width: 'auto',
         height: 'auto',
         objectFit: 'cover',
         },
@@ -94,8 +94,8 @@ function NewsTicker() {
                 <Typography variant='subtitle1'>Aktuelle Videos</Typography>
             </Grid>
             {itemData.map((item) => (
-                <Grid sx={grid} sm={12} md={3} spacing={10}>
-                        <Grid item xs={11}>
+                <Grid sx={grid} sm={12} md={3} spacing={5}>
+                        <Grid item xs={12}>
                             <Box
                             component="img"
                             src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -103,12 +103,12 @@ function NewsTicker() {
                             sx={box.button}
                             /> {/* width=446px und height=251px */}
                         </Grid>
-                        <Grid item xs={11}>
+                        <Grid item xs={12}>
                             <Typography sx={header} variant="body1" pt={2}>
                             {`${item.title}`}
                             </Typography>
                         </Grid>
-                        <Grid item xs={11}>
+                        <Grid item xs={12}>
                             <Typography sx={release}>                
                             {`${item.date}`}
                             </Typography>

@@ -5,16 +5,15 @@ import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import CryptoTest from '../components/crypto/CryptoTest';
-import Cryptoubersicht from '../components/crypto/Cryptoubersicht';
-import CryptoPreviews from '../components/crypto/CryptoPreviews';
-import CryptoHitlisten from '../components/crypto/CryptoHitlisten';
-import CryptoKolumnen from '../components/crypto/CryptoKolumnen';
-import CryptoSpecials from '../components/crypto/CryptoSpecials';
-import CryptoGuides from '../components/crypto/CryptoGuides';
+import NewsTicker from '../components/News/NewsTicker/NewsTicker';
+import TopNews from '../components/News/NewsTicker/TopNews';
+import GameList from '../components/News/NewsTicker/GameList';
+import TechList from '../components/News/NewsTicker/TechList';
+import VideoList from '../components/News/NewsTicker/VideoList';
 
 const box = {
   flexGrow: 1,
+  width: '100%',
   overflow: 'hidden',
   p: 1,
   margin: 'auto',
@@ -69,7 +68,7 @@ function a11yProps(index: number) {
 }
 
 
-function Crypto() {
+function CookiesTracking() {
 
   const [value, setValue] = React.useState(0);
 
@@ -88,41 +87,37 @@ function Crypto() {
               justifyContent="center"
               pb={6}>
           <Grid item sx={{ mb: 2 }} xs={12}>
-            <Typography variant='h4'>Alle GameEye-Crypto Inhalte im Überblick</Typography>
+            <Typography variant='h4'>Newsticker: Alle Inhalte im Überblick</Typography>
           </Grid>
           <Grid item sx={{ mb: 3 }} xs={12}>
             <Box sx={{ width: '100%' }}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs  variant="fullWidth" value={value} onChange={handleChange} aria-label="basic tabs example">
-                  <Tab label="Übersicht" {...a11yProps(0)} />
-                  <Tab label="Test" {...a11yProps(1)} />
-                  <Tab label="Previews" {...a11yProps(2)} />
-                  <Tab label="Hitlisten" {...a11yProps(3)} />
-                  <Tab label="Kolumnen" {...a11yProps(4)} />
-                  <Tab label="Specials" {...a11yProps(5)} />
-                  <Tab label="Guides" {...a11yProps(6)} />
+                  <Tab label="Newsticker" {...a11yProps(0)} />
+                  <Tab label="Top-News" {...a11yProps(1)} />
+                  <Tab label="Spiele" {...a11yProps(2)} />
+                  <Tab label="Tech" {...a11yProps(3)} />
+                  <Tab label="Video" {...a11yProps(4)} />
+                  <Tab label="Deals" {...a11yProps(5)} />
                 </Tabs>
               </Box>
               <TabPanel value={value} index={0}>
-                <Cryptoubersicht/>
+                <NewsTicker/>
               </TabPanel>
               <TabPanel value={value} index={1}>
-                <CryptoTest/>
+                <TopNews/>
               </TabPanel>
               <TabPanel value={value} index={2}>
-                <CryptoPreviews/>
+                <GameList/>
               </TabPanel>
               <TabPanel value={value} index={3}>
-                <CryptoHitlisten/>
+                <TechList/>
               </TabPanel>
               <TabPanel value={value} index={4}>
-                <CryptoKolumnen/>
+                <VideoList/>
               </TabPanel>
               <TabPanel value={value} index={5}>
-                <CryptoSpecials/>
-              </TabPanel>
-              <TabPanel value={value} index={6}>
-                <CryptoGuides/>
+                Weiter leiten zu Artikel Deals &amp; Sells
               </TabPanel>
             </Box>
           </Grid>
@@ -134,4 +129,4 @@ function Crypto() {
 
 
 
-export default Crypto;
+export default CookiesTracking;

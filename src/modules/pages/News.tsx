@@ -13,7 +13,6 @@ import VideoList from '../components/News/NewsTicker/VideoList';
 
 const box = {
   flexGrow: 1,
-  width: '100%',
   overflow: 'hidden',
   p: 1,
   margin: 'auto',

@@ -12,6 +12,16 @@ import Videos from './modules/pages/Videos';
 import Artikel from './modules/pages/Artikel';
 import Crypto from './modules/pages/Crypto';
 import Tech from './modules/pages/Tech';
+import Impressum from './modules/footer/Impressum';
+import ÜberUns from './modules/footer/ÜberUns';
+import ÜberGameEye from './modules/footer/ÜberGameEye';
+import Karriere from './modules/footer/Karriere';
+import Newsletter from './modules/footer/Newsletter';
+import Kontakt from './modules/footer/Kontakt';
+import Nutzungsbestimmungen from './modules/footer/Nutzungsbestimmungen';
+import Mediadaten from './modules/footer/Mediadaten';
+import Datenschutzerklärung from './modules/footer/Datenschutzerklärung';
+import CookiesTracking from './modules/footer/CookiesTracking';
 
 
 
@@ -29,7 +39,20 @@ function App() {
             <Route path="Tech" element={<Tech />} />
             <Route path="Crypto" element={<Crypto />} />
           </Routes>
+          <Routes>
+              <Route path="Impressum" element={<Impressum />} />
+              <Route path="ÜberUns" element={<ÜberUns />} />
+              <Route path="ÜberGameEye" element={<ÜberGameEye />} />
+              <Route path="Karriere" element={<Karriere />} />
+              <Route path="Newsletter" element={<Newsletter />} />
+              <Route path="Kontakt" element={<Kontakt />} />
+              <Route path="Nutzungsbestimmungen" element={<Nutzungsbestimmungen />} />
+              <Route path="Mediadaten" element={<Mediadaten />} />
+              <Route path="Datenschutzerklärung" element={<Datenschutzerklärung />} />
+              <Route path="Cookies&Tracking" element={<CookiesTracking />} />
+            </Routes>
         <AppFooter/>
+          
     </ThemeProvider>
   );
 }

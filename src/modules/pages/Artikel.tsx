@@ -15,7 +15,6 @@ import ArtikelGuides from '../components/article/ArtikelGuides';
 
 const box = {
   flexGrow: 1,
-  width: '100%',
   overflow: 'hidden',
   p: 1,
   margin: 'auto',

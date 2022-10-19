@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 import Navigation from './modules/components/Navigation';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './modules/components/theme/theme';
-import AppFooter from './modules/components/AppFooter';
+import AppFooter from './modules/components/AppFooterOriginal';
 import Gridhead from './modules/components/homepage/Gridhead';
 import GridTopTips from './modules/components/homepage/GridTopTips';
 import GridMosteView from './modules/components/homepage/GridMosteView';

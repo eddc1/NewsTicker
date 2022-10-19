@@ -1,6 +1,12 @@
 import * as React from 'react';
+import Typography from '../components/Typography';
 import { styled, alpha } from '@mui/material/styles';
-import { Box, Grid, Container, InputBase, ButtonBase, Typography, TextField } from '@mui/material';
+import { Box, Button, Grid, Container, InputBase } from '@mui/material';
+import {
+  Link as RouterLink,
+  MemoryRouter,
+} from 'react-router-dom';
+import { StaticRouter } from 'react-router-dom/server';
 import SearchIcon from '@mui/icons-material/Search';
 import { Theme, useTheme } from '@mui/material/styles';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -11,6 +17,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 const box = {
   flexGrow: 1,
+  width: '100%',
   overflow: 'hidden',
   p: 1,
   margin: 'auto',
@@ -18,8 +25,8 @@ const box = {
   justifyItem: 'center',
   display: 'flex',
   maxWidth: '100%',
-    img: {
-      width: '10rem',
+    button: {
+      width: '100%',
       height: 'auto'
     }
 }
@@ -39,21 +46,6 @@ const grid = {
     box: {
       display: 'block'
     }
-}
-
-
-const typography = {
-  display: 'block',
-  marginBlockStart: '1em',
-  marginBlockEnd: '1em',
-  marginInlineStart: '0px',
-  marginInlineEnd: '0px',
-  color: 'rgba(33,33,33,.75)'
-}
-
-const btnbase = {
-  width: 'auto',
-  height: 'auto'
 }
 
 const Search = styled('div')(({ theme }) => ({
@@ -204,13 +196,6 @@ const wertung = [
   '91-100',
 ];
 
-const leserinteresse = [
-  'Release-Datum',
-  'Alphabetisch',
-  'Leserinteresse',
-  'Nach Wertung',
-];
-
 function getStyles(name: string, genre: string[], theme: Theme) {
   return {
     fontWeight:
@@ -222,7 +207,16 @@ function getStyles(name: string, genre: string[], theme: Theme) {
 
 // Filter Ende
 
-function Spiele() {
+function Router(props: { children?: React.ReactNode }) {
+  const { children } = props;
+  if (typeof window === 'undefined') {
+    return <StaticRouter location="/">{children}</StaticRouter>;
+  }
+
+  return <MemoryRouter>{children}</MemoryRouter>;
+}
+
+function Mediadaten() {
   
   // Filter Start
   const theme = useTheme();
@@ -259,7 +253,7 @@ function Spiele() {
                   />
                 </Search>
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12} md={4}>
                 <FormControl sx={{ m: 2, width: 300 }} size="small">
                   <InputLabel id="demo-multiple-name-label">Genre</InputLabel>
                   <Select
@@ -282,9 +276,7 @@ function Spiele() {
                     ))}
                   </Select>
                 </FormControl>
-              </Grid>
-              <Grid item xs={4}>
-                <Box>
+                <Grid item xs={12} md={4}>
                   <FormControl sx={{ m: 2, width: 300 }} size="small">
                     <InputLabel id="demo-multiple-name-label">Release</InputLabel>
                     <Select
@@ -307,56 +299,20 @@ function Spiele() {
                       ))}
                     </Select>
                   </FormControl>
-                </Box>
-              </Grid>
-              <Grid item xs={4} justifyContent="flex-end">
-                <FormControl sx={{ m: 2, width: 300 }} size="small">
-                  <InputLabel id="demo-multiple-name-label">Wertung</InputLabel>
-                  <Select
-                    labelId="demo-multiple-name-label"
-                    id="demo-multiple-name"
-                    multiple
-                    value={genre}
-                    onChange={handleChange}
-                    input={<OutlinedInput label="Wertung" />}
-                    MenuProps={MenuProps}
-                  >
-                    {wertung.map((name) => (
-                      <MenuItem
-                        key={name}
-                        value={name}
-                        style={getStyles(name, genre, theme)}
-                      >
-                        {name}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Grid>
-              <Grid item xs={4} sx={{ ml: 2 }}>
-                <Typography variant="h6">9845 Einträge</Typography>
-              </Grid>
-              <Box
-                component={Grid}
-                item
-                xs={3}
-                display={{ xs: "none", sm: "block" }}
-              >
-                <Typography variant="h6">Sortierung:</Typography>
-              </Box>
-              <Grid item xs={4}>
-                <FormControl sx={{ m: 0, width: 300 }} size="small">
-                    <InputLabel id="demo-multiple-name-label">Leserinteresse</InputLabel>
+                </Grid>
+                <Grid item xs={12} md={4}>
+                  <FormControl sx={{ m: 2, width: 300 }} size="small">
+                    <InputLabel id="demo-multiple-name-label">Wertung</InputLabel>
                     <Select
                       labelId="demo-multiple-name-label"
                       id="demo-multiple-name"
                       multiple
                       value={genre}
                       onChange={handleChange}
-                      input={<OutlinedInput label="Leserinteresse" />}
+                      input={<OutlinedInput label="Wertung" />}
                       MenuProps={MenuProps}
                     >
-                      {leserinteresse.map((name) => (
+                      {wertung.map((name) => (
                         <MenuItem
                           key={name}
                           value={name}
@@ -367,62 +323,22 @@ function Spiele() {
                       ))}
                     </Select>
                   </FormControl>
+                </Grid>
               </Grid>
-              <Grid item xs={10}>
-                <Box sx={{ height: 150, width: "100%", backgroundColor: "#f2f7fc", m: 2, pl: 5, pr: 5 }}>
-                        <Typography variant="subtitle1" sx={{ pt: 2, pb: 2 }}>Beste PC-Spiele: Liste der beliebtesten Games</Typography>
-                        <Typography variant="h6">In dieser Bestenliste findest du die aktuell angesagtesten PC-Spiele nach Leserinteresse auf Gameeye.com inklusive Wertung und Release.</Typography>
-                </Box>
+              <Grid item xs={6}>
+                <Typography variant="h6">Zahl Einträge</Typography>
               </Grid>
-              <Grid item>
-                <Container sx={container}>
-                  <Grid
-                      sx={grid}
-                      container
-                      spacing={12}>
-                    <Grid item sm={12} md={3}>
-                      <ButtonBase sx={btnbase}>
-                      <Box 
-                        component="img"
-                        src="https://images.cgames.de/images/gamestar/95/ultima-1-the-first-age-of-darkness_2290285.jpg"
-                        alt="suitcase"
-                        sx={box.img}
-                      />
-                      </ButtonBase>
-                    </Grid>
-                    <Grid item sm={12} md={9}>
-                      <Box sx={grid.box}>
-                        <Typography variant="subtitle1" sx={{ paddingBottom: 2 }}>
-                          Ultima 1: The First Age of Darkness
-                        </Typography>
-                        <TextField
-                          disabled 
-                          id="outlined-read-only-input"
-                          label="Platform"
-                          defaultValue="PC"
-                          InputProps={{
-                            readOnly: true,
-                          }}
-                          sx={{ width: 'auto' }}
-                        />
-                        <Typography sx={typography}>
-                          Genre: Rollenspiel
-                        </Typography>
-                        <Typography sx={typography}>
-                          Entwickler: Origin Systems
-                        </Typography>
-                        <Typography sx={typography}>
-                          Release: 02.09.1980 (PC)
-                        </Typography>
-                      </Box>
-                    </Grid>
-                  </Grid>
-                </Container>
+              <Grid item xs={6}>
+                <Typography variant="h6">Sortierung:</Typography>
               </Grid>
             </Grid>
           </Container>
+          
         </Box>
+        
+        
+
   );
 }
 
-export default Spiele;
+export default Mediadaten;

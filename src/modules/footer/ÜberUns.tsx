@@ -15,6 +15,7 @@ import CryptoGuides from '../components/crypto/CryptoGuides';
 
 const box = {
   flexGrow: 1,
+  width: '100%',
   overflow: 'hidden',
   p: 1,
   margin: 'auto',
@@ -69,7 +70,7 @@ function a11yProps(index: number) {
 }
 
 
-function Crypto() {
+function ÜberUns() {
 
   const [value, setValue] = React.useState(0);
 
@@ -134,4 +135,4 @@ function Crypto() {
 
 
 
-export default Crypto;
+export default ÜberUns;

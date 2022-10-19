@@ -111,11 +111,11 @@ export default function PrimarySearchAppBar() {
           </IconButton>
           <Box sx={{ flex: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', paddingRight: '1rem' }}>
             {pages.map((page) => (
-            <Typography>
-                <Link style={{ textDecoration: "none", color: "white", paddingRight: 30 }} to={`/${page}`}>
-                {page}
-                </Link>
-            </Typography>
+              <Typography>
+                  <Link style={{ textDecoration: "none", color: "white", paddingRight: 30 }} to={`/${page}`}>
+                  {page}
+                  </Link>
+              </Typography>
             ))}
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

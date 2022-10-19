@@ -11,6 +11,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 const box = {
   flexGrow: 1,
+  width: '100%',
   overflow: 'hidden',
   p: 1,
   margin: 'auto',
@@ -222,7 +223,7 @@ function getStyles(name: string, genre: string[], theme: Theme) {
 
 // Filter Ende
 
-function Spiele() {
+function Kontakt() {
   
   // Filter Start
   const theme = useTheme();
@@ -425,4 +426,4 @@ function Spiele() {
   );
 }
 
-export default Spiele;
+export default Kontakt;
