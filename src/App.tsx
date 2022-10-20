@@ -38,19 +38,17 @@ function App() {
             <Route path="Artikel" element={<Artikel />} />
             <Route path="Tech" element={<Tech />} />
             <Route path="Crypto" element={<Crypto />} />
+            <Route path="Impressum" element={<Impressum />} />
+            <Route path="ÜberUns" element={<ÜberUns />} />
+            <Route path="ÜberGameEye" element={<ÜberGameEye />} />
+            <Route path="Karriere" element={<Karriere />} />
+            <Route path="Newsletter" element={<Newsletter />} />
+            <Route path="Kontakt" element={<Kontakt />} />
+            <Route path="Nutzungsbestimmungen" element={<Nutzungsbestimmungen />} />
+            <Route path="Mediadaten" element={<Mediadaten />} />
+            <Route path="Datenschutzerklärung" element={<Datenschutzerklärung />} />
+            <Route path="Cookies&Tracking" element={<CookiesTracking />} />
           </Routes>
-          <Routes>
-              <Route path="Impressum" element={<Impressum />} />
-              <Route path="ÜberUns" element={<ÜberUns />} />
-              <Route path="ÜberGameEye" element={<ÜberGameEye />} />
-              <Route path="Karriere" element={<Karriere />} />
-              <Route path="Newsletter" element={<Newsletter />} />
-              <Route path="Kontakt" element={<Kontakt />} />
-              <Route path="Nutzungsbestimmungen" element={<Nutzungsbestimmungen />} />
-              <Route path="Mediadaten" element={<Mediadaten />} />
-              <Route path="Datenschutzerklärung" element={<Datenschutzerklärung />} />
-              <Route path="Cookies&Tracking" element={<CookiesTracking />} />
-            </Routes>
         <AppFooter/>
     </ThemeProvider>
   );
