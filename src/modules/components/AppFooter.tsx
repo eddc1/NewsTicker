@@ -4,96 +4,139 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
+
 import { Link } from 'react-router-dom';
 
-const important = ["Impressum", "Über uns", "Über GameEye", "Karriere", "Newsletter", "Kontakt", "Nutzungsbestimmungen", "Mediadaten", "Datenschutzerklärung", "Cookies & Tracking"];
 
 function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Typography color="inherit">
-        GameEye.com
+      <Typography color="white" href="https://mui.com/">
+        Your Website
       </Typography>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
   );
 }
 
-
-function Item(props: BoxProps) {
-  const { sx, ...other } = props;
+function Important() {
   return (
-    <Box
-      sx={{
-        p: 1,
-        m: 1,
-        fontSize: '0.65rem',
-        fontWeight: '700',
-        ...sx,
-      }}
-      {...other}
-    />
+    <React.Fragment>
+        <Box sx={{ flex: 1, display: { xs: 'row', md: 'flex' }, whiteSpace: 'pre-wrap', flexWrap: 'wrap'  }}>
+          {importantList.map((page) => (
+            <Grid item xs="auto" sx={{ display: 'inline-flex', }}>
+              <Link style={{ textDecoration: "none", color: "white", paddingRight: 15 }} to={`/${page}`}>
+                {page}
+              </Link>
+            </Grid>
+          ))}
+        </Box>
+    </React.Fragment>
   );
 }
 
-const footer = {
-  zIndex: 2,
-  position: 'relative',
-  bgcolor: 'primary.dark',
-  marginTop: '0!important',
-  display: 'block',
-    gridContainer: {
-      paddingLeft: 20,
-      paddingRight: 20,
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      minWidth: 320,
-    },
-    row: {
-      width: '100%',
-      float: 'left',
-      position: 'relative',
-      minHeight: 1,
-      paddingLeft: 10,
-      paddingRight: 10,
-    },
-    content: {
-      fontSize: '.75rem',
-      marginBottom: '10px!important',
-      fontFamily: 'Helvetica,Arial,sans-serif',
-      fontWeight: 400,
-      lineHeight: 1.5,
-    }
-}; 
+const importantList = ["Impressum", "GameEye", "Newsletter", "Kontakt", "Nutzungsbestimmungen", "Mediadaten", "Datenschutzerklärung", "Cookies & Tracking"];
 
+
+
+const iconStyle = {
+  width: 48,
+  height: 48,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: 'warning.main',
+  mr: 1,
+  '&:hover': {
+    bgcolor: 'warning.dark',
+  },
+};
+
+const LANGUAGES = [
+  {
+    code: 'en-US',
+    name: 'English',
+  },
+  {
+    code: 'fr-FR',
+    name: 'Français',
+  },
+];
 
 export default function AppFooter() {
   return (
-      <Container sx={footer}>
-        <Grid container sx={footer.gridContainer}>
-          <Grid container
-  direction="row"
-  justifyContent="flex-start"
-  alignItems="center" sx={footer.row}>
-            <Grid item sx={footer.content}>
-              <Typography variant="caption">
-                <Box sx={{ flex: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'center', paddingRight: '1rem' }}>
-                  {important.map((page) => (
-                    <Item sx={{  }}>
-                      <Link style={{ textDecoration: "none", color: "white" }} to={`/${page}`}>
-                        {page}
-                      </Link>
-                    </Item>
-                  ))}
+    <Typography
+      component="footer"
+      sx={{ display: 'flex', bgcolor: 'primary.dark', color: 'white' }}
+    >
+      <Container sx={{ my: 8, display: 'flex' }}>
+        <Grid container spacing={5}>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid
+              container
+              direction="column"
+              justifyContent="flex-end"
+              spacing={2}
+              sx={{ height: 120 }}
+            >
+              <Grid item sx={{ display: 'flex' }}>
+                <Box component="a" href="https://mui.com/" sx={iconStyle}>
+                  <img
+                    src="https://mui.com/static/themes/onepirate/appFooterFacebook.png"
+                    alt="Facebook"
+                  />
                 </Box>
-              </Typography>
+                <Box component="a" href="https://twitter.com/MUI_hq" sx={iconStyle}>
+                  <img
+                    src="https://mui.com/static/themes/onepirate/appFooterTwitter.png"
+                    alt="Twitter"
+                  />
+                </Box>
+              </Grid>
+              <Grid item>
+                <Copyright />
+              </Grid>
             </Grid>
           </Grid>
-          <Grid item>
-            <Copyright/>
+          <Grid item xs={6} sm={4} md={2}>
+            <Typography variant="h6" marked="left" gutterBottom>
+              Legal
+            </Typography>
+            <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
+              <Box component="li" sx={{ py: 0.5 }}>
+                <Typography href="/premium-themes/onepirate/terms/">Terms</Typography>
+              </Box>
+              <Box component="li" sx={{ py: 0.5 }}>
+                <Typography href="/premium-themes/onepirate/privacy/">Privacy</Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={6} sm={8} md={4}>
+            <Typography variant="h6" marked="left" gutterBottom>
+              Language
+            </Typography>
+            <TextField
+              select
+              size="medium"
+              variant="standard"
+              SelectProps={{
+                native: true,
+              }}
+              sx={{ mt: 1, width: 150 }}
+            >
+              {LANGUAGES.map((language) => (
+                <option value={language.code} key={language.code}>
+                  {language.name}
+                </option>
+              ))}
+            </TextField>
+          </Grid>
+          <Grid item xs={12}>
+            <Important/>
           </Grid>
         </Grid>
       </Container>
+    </Typography>
   );
 }

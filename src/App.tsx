@@ -52,7 +52,6 @@ function App() {
               <Route path="Cookies&Tracking" element={<CookiesTracking />} />
             </Routes>
         <AppFooter/>
-          
     </ThemeProvider>
   );
 }
