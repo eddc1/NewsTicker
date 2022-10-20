@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { Box, BoxProps } from '@mui/material';
+import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import TextField from '../components/TextField';
 
 import { Link } from 'react-router-dom';
 
@@ -36,7 +35,7 @@ function Important() {
   );
 }
 
-const importantList = ["Impressum", "GameEye", "Newsletter", "Kontakt", "Nutzungsbestimmungen", "Mediadaten", "Datenschutzerklärung", "Cookies & Tracking"];
+const importantList = ["Impressum", "Gameeye", "Newsletter", "Kontakt", "Nutzungsbestimmungen", "Mediadaten", "Datenschutzerklärung", "Cookies & Tracking"];
 
 function Social() {
   return (
@@ -65,7 +64,7 @@ export default function AppFooter() {
       component="footer"
       sx={{ display: 'flex', bgcolor: 'primary.dark', color: 'white' }}
     >
-      <Container sx={{ my: 5, display: 'flex' }}>
+      <Container sx={{ my: 8, display: 'flex' }}>
         <Grid container alignItems="center" justifyContent="center" spacing={2}>
           <Grid item>
             <Important/>

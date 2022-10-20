@@ -13,9 +13,11 @@ import Artikel from './modules/pages/Artikel';
 import Crypto from './modules/pages/Crypto';
 import Tech from './modules/pages/Tech';
 import Impressum from './modules/footer/Impressum';
-import ÜberUns from './modules/footer/ÜberUns';
-import ÜberGameEye from './modules/footer/ÜberGameEye';
-import Karriere from './modules/footer/Karriere';
+import GameEye from './modules/footer/GameEye';
+import Meta from './modules/footer/Meta';
+import Instagram from './modules/footer/Instagram';
+import Twitter from './modules/footer/Twitter';
+import TikTok from './modules/footer/TikTok';
 import Newsletter from './modules/footer/Newsletter';
 import Kontakt from './modules/footer/Kontakt';
 import Nutzungsbestimmungen from './modules/footer/Nutzungsbestimmungen';
@@ -39,15 +41,17 @@ function App() {
             <Route path="Tech" element={<Tech />} />
             <Route path="Crypto" element={<Crypto />} />
             <Route path="Impressum" element={<Impressum />} />
-            <Route path="ÜberUns" element={<ÜberUns />} />
-            <Route path="ÜberGameEye" element={<ÜberGameEye />} />
-            <Route path="Karriere" element={<Karriere />} />
+            <Route path="Gameeye" element={<GameEye />} />
             <Route path="Newsletter" element={<Newsletter />} />
             <Route path="Kontakt" element={<Kontakt />} />
             <Route path="Nutzungsbestimmungen" element={<Nutzungsbestimmungen />} />
             <Route path="Mediadaten" element={<Mediadaten />} />
             <Route path="Datenschutzerklärung" element={<Datenschutzerklärung />} />
             <Route path="Cookies&Tracking" element={<CookiesTracking />} />
+            <Route path="Meta" element={<Meta />} />
+            <Route path="Instagram" element={<Instagram />} />
+            <Route path="Twitter" element={<Twitter />} />
+            <Route path="TikTok" element={<TikTok />} />
           </Routes>
         <AppFooter/>
     </ThemeProvider>

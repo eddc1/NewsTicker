@@ -3,7 +3,7 @@ import { Container, Box, Typography } from '@mui/material';
 import Gridhead from '../components/homepage/Gridhead';
 
 
-function ÜberGameEye() {
+function GameEye() {
 
   return (
     <Box>
@@ -14,4 +14,4 @@ function ÜberGameEye() {
   );
 }
 
-export default ÜberGameEye;
+export default GameEye;

@@ -68,7 +68,7 @@ function a11yProps(index: number) {
 }
 
 
-function Karriere() {
+function TikTok() {
 
   const [value, setValue] = React.useState(0);
 
@@ -129,4 +129,4 @@ function Karriere() {
 
 
 
-export default Karriere;
+export default TikTok;
