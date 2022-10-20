@@ -22,6 +22,8 @@ function Copyright() {
 
 function Important() {
   return (
+    // display: inline-flex sorgt für den Zeilenbruch bei sx und sm automatisch.
+    // flexWrap: wrap sorgt dafür dass die Grid Items nicht über dem Bildschierm überragen.
     <React.Fragment>
         <Box sx={{ flex: 1, display: { xs: 'row', md: 'flex' }, whiteSpace: 'pre-wrap', flexWrap: 'wrap'  }}>
           {importantList.map((page) => (
