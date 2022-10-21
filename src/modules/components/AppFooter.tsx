@@ -23,13 +23,20 @@ function Important() {
     // flexWrap: wrap sorgt dafür dass die Grid Items nicht über dem Bildschierm überragen.
     <React.Fragment>
         <Box sx={{ flex: 1, display: { xs: 'row', md: 'flex' }, whiteSpace: 'pre-wrap', flexWrap: 'wrap'  }}>
-          {importantList.map((page) => (
-            <Grid item xs="auto" sx={{ display: 'inline-flex', }}>
-              <Link style={{ textDecoration: "none", color: "white", paddingRight: 15 }} to={`/${page}`}>
-                {page}
-              </Link>
-            </Grid>
-          ))}
+          <Grid
+              container
+              spacing={2}
+              alignItems="center"
+              justifyContent="center"
+            >
+            {importantList.map((page) => (
+              <Grid item xs="auto" sx={{ display: 'inline-flex', }}>
+                <Link style={{ textDecoration: "none", color: "white", paddingRight: 15 }} to={`/${page}`}>
+                  {page}
+                </Link>
+              </Grid>
+            ))}
+          </Grid>
         </Box>
     </React.Fragment>
   );
@@ -64,8 +71,8 @@ export default function AppFooter() {
       component="footer"
       sx={{ display: 'flex', bgcolor: 'primary.dark', color: 'white' }}
     >
-      <Container sx={{ my: 8, display: 'flex' }}>
-        <Grid container alignItems="center" justifyContent="center" spacing={2}>
+      <Container sx={{ my: 4, display: 'flex' }}>
+        <Grid container spacing={3} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '5vh' }}>
           <Grid item>
             <Important/>
           </Grid>
