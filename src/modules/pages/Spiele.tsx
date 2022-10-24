@@ -380,25 +380,18 @@ function Spiele() {
   return (
         <Box component="section" sx={box}>
           <Container sx={container}>
-            <Grid sx={grid} container spacing={2}>
-              <Grid item>
+            <Grid container sx={grid} rowSpacing={5}>
+              <Grid item xs={12}>
                 <Options/>
               </Grid>
-              {/* <Grid item>
-                <Filter/>
-              </Grid> */}
-              <Grid item xs={10}>
-                <Box sx={{ height: 150, width: "100%", backgroundColor: "#f2f7fc", m: 2, pl: 5, pr: 5 }}>
+              <Grid item xs={12}>
+                <Box sx={{ height: 150, backgroundColor: "#f2f7fc", pl: 5, pr: 5 }}>
                         <Typography variant="subtitle1" sx={{ pt: 2, pb: 2 }}>Beste PC-Spiele: Liste der beliebtesten Games</Typography>
                         <Typography variant="h6">In dieser Bestenliste findest du die aktuell angesagtesten PC-Spiele nach Leserinteresse auf Gameeye.com inklusive Wertung und Release.</Typography>
                 </Box>
               </Grid>
-              <Grid item>
-                <Container sx={container}>
-                  <Grid
-                      sx={grid}
-                      container
-                      spacing={12}>
+              <Grid item xs={12}>
+                  <Grid sx={grid} container spacing={12}>
                     <Grid item sm={12} md={3}>
                       <ButtonBase sx={btnbase}>
                       <Box 
@@ -436,7 +429,6 @@ function Spiele() {
                       </Box>
                     </Grid>
                   </Grid>
-                </Container>
               </Grid>
             </Grid>
           </Container>
