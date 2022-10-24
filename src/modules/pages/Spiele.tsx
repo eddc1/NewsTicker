@@ -56,6 +56,159 @@ const btnbase = {
   height: 'auto'
 }
 
+function Options() {
+  const theme = useTheme();
+  const [genre, setgenre] = React.useState<string[]>([]);
+
+  const handleChange = (event: SelectChangeEvent<typeof genre>) => {
+    const {
+      target: { value },
+    } = event;
+    setgenre(
+      // On autofill we get a stringified value.
+      typeof value === 'string' ? value.split(',') : value,
+    );
+  };
+
+  return (
+    <React.Fragment>
+       <Box component="section" sx={box}>
+            <Grid sx={grid} container>
+              <Grid item sx={{ mb: 2 }} xs={12}>
+                <Typography variant='h4'>Spiele</Typography>
+              </Grid>
+              <Grid item sx={{ mb: 2 }} xs={12}>
+                <Search>
+                  <SearchIconWrapper>
+                    <SearchIcon />
+                  </SearchIconWrapper>
+                  <StyledInputBase
+                    placeholder="Search…"
+                    inputProps={{ 'aria-label': 'search' }}
+                  />
+                </Search>
+              </Grid>
+              <Grid xs={12} sx={{ flexGrow: 1 }} spacing={2} container direction="row" justifyContent="center" alignItems="center">
+                <Grid item xs={4}>
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-name-label">Genre</InputLabel>
+                    <Select
+                      labelId="demo-multiple-name-label"
+                      id="demo-multiple-name"
+                      multiple
+                      value={genre}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Genre" />}
+                      MenuProps={MenuProps}
+                    >
+                      {names.map((name) => (
+                        <MenuItem
+                          key={name}
+                          value={name}
+                          style={getStyles(name, genre, theme)}
+                        >
+                          {name}
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Grid>
+                <Grid item xs={4}>
+                  <Box>
+                    <FormControl size="medium" fullWidth>
+                      <InputLabel id="demo-multiple-name-label">Release</InputLabel>
+                      <Select
+                        labelId="demo-multiple-name-label"
+                        id="demo-multiple-name"
+                        multiple
+                        value={genre}
+                        onChange={handleChange}
+                        input={<OutlinedInput label="Release" />}
+                        MenuProps={MenuProps}
+                      >
+                        {release.map((name) => (
+                          <MenuItem
+                            key={name}
+                            value={name}
+                            style={getStyles(name, genre, theme)}
+                          >
+                            {name}
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </FormControl>
+                  </Box>
+                </Grid>
+                <Grid item xs={4} justifyContent="flex-end">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-multiple-name-label">Wertung</InputLabel>
+                    <Select
+                      labelId="demo-multiple-name-label"
+                      id="demo-multiple-name"
+                      multiple
+                      value={genre}
+                      onChange={handleChange}
+                      input={<OutlinedInput label="Wertung" />}
+                      MenuProps={MenuProps}
+                    >
+                      {wertung.map((name) => (
+                        <MenuItem
+                          key={name}
+                          value={name}
+                          style={getStyles(name, genre, theme)}
+                        >
+                          {name}
+                        </MenuItem>
+                      ))}
+                    </Select>
+                  </FormControl>
+                </Grid>
+              </Grid>
+              <Grid xs={12} sx={{ flexGrow: 1, mt: 1 }} spacing={2} container direction="row" justifyContent="space-between" >
+                <Grid item xs={3}>
+                  <Typography variant="h6">9845 Einträge</Typography>
+                </Grid>
+                <Grid item xs={3}>
+                  <Box
+                      component={Grid}
+                      item
+                      xs={3}
+                      display={{ xs: "none", sm: "block" }}>
+                    <Typography variant="h6">Sortierung:</Typography>
+                  </Box>
+                </Grid>
+                <Grid item xs={4}>
+                  <FormControl fullWidth>
+                      <InputLabel id="demo-multiple-name-label">Leserinteresse</InputLabel>
+                      <Select
+                        labelId="demo-multiple-name-label"
+                        id="demo-multiple-name"
+                        multiple
+                        value={genre}
+                        onChange={handleChange}
+                        input={<OutlinedInput label="Leserinteresse" />}
+                        MenuProps={MenuProps}
+                      >
+                        {leserinteresse.map((name) => (
+                          <MenuItem
+                            key={name}
+                            value={name}
+                            style={getStyles(name, genre, theme)}
+                          >
+                            {name}
+                          </MenuItem>
+                        ))}
+                      </Select>
+                    </FormControl>
+                </Grid>
+              </Grid>
+            </Grid>
+      </Box>
+    </React.Fragment>
+  );
+}
+
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -220,154 +373,20 @@ function getStyles(name: string, genre: string[], theme: Theme) {
   };
 }
 
+
 // Filter Ende
 
 function Spiele() {
-  
-  // Filter Start
-  const theme = useTheme();
-  const [genre, setgenre] = React.useState<string[]>([]);
-
-  const handleChange = (event: SelectChangeEvent<typeof genre>) => {
-    const {
-      target: { value },
-    } = event;
-    setgenre(
-      // On autofill we get a stringified value.
-      typeof value === 'string' ? value.split(',') : value,
-    );
-  };
-
-  // Filter Ende
-
-
   return (
         <Box component="section" sx={box}>
           <Container sx={container}>
             <Grid sx={grid} container spacing={2}>
-              <Grid item sx={{ m: 2 }} xs={12}>
-                <Typography variant='h4'>Spiele</Typography>
+              <Grid item>
+                <Options/>
               </Grid>
-              <Grid item sx={{ m: 2 }} xs={12}>
-                <Search>
-                  <SearchIconWrapper>
-                    <SearchIcon />
-                  </SearchIconWrapper>
-                  <StyledInputBase
-                    placeholder="Search…"
-                    inputProps={{ 'aria-label': 'search' }}
-                  />
-                </Search>
-              </Grid>
-              <Grid item xs={4}>
-                <FormControl sx={{ m: 2, width: 300 }} size="small">
-                  <InputLabel id="demo-multiple-name-label">Genre</InputLabel>
-                  <Select
-                    labelId="demo-multiple-name-label"
-                    id="demo-multiple-name"
-                    multiple
-                    value={genre}
-                    onChange={handleChange}
-                    input={<OutlinedInput label="Genre" />}
-                    MenuProps={MenuProps}
-                  >
-                    {names.map((name) => (
-                      <MenuItem
-                        key={name}
-                        value={name}
-                        style={getStyles(name, genre, theme)}
-                      >
-                        {name}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Grid>
-              <Grid item xs={4}>
-                <Box>
-                  <FormControl sx={{ m: 2, width: 300 }} size="small">
-                    <InputLabel id="demo-multiple-name-label">Release</InputLabel>
-                    <Select
-                      labelId="demo-multiple-name-label"
-                      id="demo-multiple-name"
-                      multiple
-                      value={genre}
-                      onChange={handleChange}
-                      input={<OutlinedInput label="Release" />}
-                      MenuProps={MenuProps}
-                    >
-                      {release.map((name) => (
-                        <MenuItem
-                          key={name}
-                          value={name}
-                          style={getStyles(name, genre, theme)}
-                        >
-                          {name}
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                </Box>
-              </Grid>
-              <Grid item xs={4} justifyContent="flex-end">
-                <FormControl sx={{ m: 2, width: 300 }} size="small">
-                  <InputLabel id="demo-multiple-name-label">Wertung</InputLabel>
-                  <Select
-                    labelId="demo-multiple-name-label"
-                    id="demo-multiple-name"
-                    multiple
-                    value={genre}
-                    onChange={handleChange}
-                    input={<OutlinedInput label="Wertung" />}
-                    MenuProps={MenuProps}
-                  >
-                    {wertung.map((name) => (
-                      <MenuItem
-                        key={name}
-                        value={name}
-                        style={getStyles(name, genre, theme)}
-                      >
-                        {name}
-                      </MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Grid>
-              <Grid item xs={4} sx={{ ml: 2 }}>
-                <Typography variant="h6">9845 Einträge</Typography>
-              </Grid>
-              <Box
-                component={Grid}
-                item
-                xs={3}
-                display={{ xs: "none", sm: "block" }}
-              >
-                <Typography variant="h6">Sortierung:</Typography>
-              </Box>
-              <Grid item xs={4}>
-                <FormControl sx={{ m: 0, width: 300 }} size="small">
-                    <InputLabel id="demo-multiple-name-label">Leserinteresse</InputLabel>
-                    <Select
-                      labelId="demo-multiple-name-label"
-                      id="demo-multiple-name"
-                      multiple
-                      value={genre}
-                      onChange={handleChange}
-                      input={<OutlinedInput label="Leserinteresse" />}
-                      MenuProps={MenuProps}
-                    >
-                      {leserinteresse.map((name) => (
-                        <MenuItem
-                          key={name}
-                          value={name}
-                          style={getStyles(name, genre, theme)}
-                        >
-                          {name}
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-              </Grid>
+              {/* <Grid item>
+                <Filter/>
+              </Grid> */}
               <Grid item xs={10}>
                 <Box sx={{ height: 150, width: "100%", backgroundColor: "#f2f7fc", m: 2, pl: 5, pr: 5 }}>
                         <Typography variant="subtitle1" sx={{ pt: 2, pb: 2 }}>Beste PC-Spiele: Liste der beliebtesten Games</Typography>
