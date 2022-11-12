@@ -13,8 +13,6 @@ const mainContainer = {
     marginLeft: 'auto',
     boxSizing: 'border-box',
     marginRight: 'auto',
-    paddingLeft: 16,
-    paddingRight: 16,
     paddingTop: '4rem',
     fontFamily: 'Arial',
     maxWidth: '105ch',
@@ -53,7 +51,7 @@ const daynewslist = {
 
 function Videos() {
   return (
-    <Container sx={mainContainer}> 
+    <Box sx={mainContainer}> 
         <Box
         component="section"
         sx={box}>
@@ -73,7 +71,7 @@ function Videos() {
                     </Grid>
                 </Grid>
         </Box>
-    </Container>
+    </Box>
   );
 }
 
