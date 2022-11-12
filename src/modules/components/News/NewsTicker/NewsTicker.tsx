@@ -119,11 +119,16 @@ function NewsTicker() {
         </Container>
         <Grid item xs={12} container>
             <Grid item container direction="row" spacing={0}>
-                <Grid item sx={daynewslist} xs={8}>
+                {/* Damit DayNewsList auf komplette app angezeigt wird im SM Modus wird bei der Grid sm={12} gesetzt
+                    und AdNewsTicker wird auf display xs: none verschwinden um platz zu schaffen.
+                */}
+                <Grid item sx={daynewslist} sm={12} md={8}>
                     <DayNewsList/>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdNewsTicker/>
+                    <Box sx={{flex: 1, display: { xs: 'none', md: 'flex' }}}>
+                      <AdNewsTicker/>
+                    </Box>
                 </Grid>
             </Grid>
         </Grid>

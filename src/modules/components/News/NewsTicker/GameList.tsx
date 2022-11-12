@@ -57,7 +57,7 @@ function GameList() {
       sx={box}>
         <Grid container xs={12} >
             <Grid item container direction="row">
-                <Grid item sx={daynewslist} xs={8}>
+                <Grid item sx={daynewslist} sm={12} md={8}>
                     <Grid container>
                         <Grid item>
                             <Container>
@@ -116,7 +116,9 @@ function GameList() {
                     </Grid>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdGameList/>
+                    <Box sx={{flex: 1, display: { xs: 'none', md: 'flex' }}}>
+                        <AdGameList/>
+                    </Box>    
                 </Grid>
             </Grid>
         </Grid>

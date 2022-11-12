@@ -62,11 +62,13 @@ function Videos() {
             </Box>
                 <Grid item xs={12} container>
                     <Grid item container direction="row">
-                        <Grid item sx={daynewslist} xs={8}>
+                        <Grid item sx={daynewslist} sm={12} md={8}>
                             <VideosToday/>
                         </Grid>
                         <Grid item sx={gridimg} xs={4}>
-                            <AdVideosToday/>
+                            <Box sx={{flex: 1, display: { xs: 'none', md: 'flex' }}}>
+                                <AdVideosToday/>
+                            </Box>
                         </Grid>
                     </Grid>
                 </Grid>

@@ -55,7 +55,7 @@ function VideoList() {
       sx={box}>
         <Grid container xs={12} >
             <Grid item container direction="row">
-                <Grid item sx={daynewslist} xs={8}>
+                <Grid item sx={daynewslist} sm={12} md={8}>
                     <Grid container>
                         <Grid item>
                             <Container>
@@ -114,7 +114,9 @@ function VideoList() {
                     </Grid>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdVideoList/>
+                    <Box sx={{flex: 1, display: { xs: 'none', md: 'flex' }}}>
+                        <AdVideoList/>
+                    </Box>
                 </Grid>
             </Grid>
         </Grid>

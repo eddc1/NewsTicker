@@ -143,7 +143,7 @@ function CryptoSpecials() {
       sx={box}>
         <Grid sx={grid} xs={12} rowSpacing={1} columnSpacing={3} container>
             <Grid item container direction="row" spacing={0}>
-                <Grid item sx={daynewslist} xs={8}>
+                <Grid item sx={daynewslist} sm={12} md={8}>
                     <Container sx={container}>
                         <Grid container>
                             <Grid item sm={12} md={12}>
@@ -210,7 +210,9 @@ function CryptoSpecials() {
                     </Grid>
                 </Grid>
                 <Grid item sx={gridimg} xs={4}>
-                    <AdCryptoSpecials/>
+                    <Box sx={{flex: 1, display: { xs: 'none', md: 'flex' }}}>
+                        <AdCryptoSpecials/>
+                    </Box>
                 </Grid>
             </Grid>
         </Grid>
