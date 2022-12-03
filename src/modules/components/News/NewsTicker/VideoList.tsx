@@ -6,7 +6,7 @@ import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import AdVideoList from './AdNewsList/AdVideoList';
+import AdVideoList from '../AdNewsList/AdVideoList';
 
 const box = {
     flexGrow: 1,

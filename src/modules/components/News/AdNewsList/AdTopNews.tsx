@@ -1,6 +1,6 @@
 import { Box, ButtonBase, Button, ListItemButton } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import Typography from '../../../Typography';
+import Typography from '../../Typography';
 import { styled } from '@mui/material/styles';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
@@ -54,7 +54,7 @@ const container = {
     paddingRight: 0,
 }
 
-function AdGameList() {
+function AdTopNews() {
   return (
     <Box
       component="section"
@@ -71,8 +71,8 @@ function AdGameList() {
                 </Grid>
                 <Grid item xs={12}>
                     <Box sx={{ width: 'auto', height: 'auto', backgroundColor: "#f2f7fc", paddingRight: 2, paddingLeft: 2, paddingBottom: 2 }}>
-                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>Aktuelle Spiele-News auf GameEye</Typography>
-                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Alle News, Artikel und Videos zu PC-Spielen im Überblick. Bleibe bei Games-Themen immer auf dem neuesten Stand.
+                            <Typography variant="subtitle2" sx={{ pt: 2, pb: 2 }}>Aktuelle GameEye-News im Trend: Was bewegt Spieler am meisten?</Typography>
+                            <Typography variant="h6" sx={{ fontSize: '0.9rem' }}>Die beliebtesten Nachrichten zu PC-Spielen und Hardware. Hier entgeht euch kein Trendthema.
                             </Typography>
                     </Box>
                 </Grid>
@@ -230,4 +230,4 @@ const contentListTopArtikelVideo = [
 
   
 
-export default AdGameList;
+export default AdTopNews;

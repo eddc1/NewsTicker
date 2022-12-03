@@ -8,6 +8,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import AdGames from '../components/games/AdGames';
 
 const box = {
   flexGrow: 1,
@@ -18,10 +19,7 @@ const box = {
   justifyItem: 'center',
   display: 'flex',
   maxWidth: '100%',
-    img: {
-      width: '10rem',
-      height: 'auto'
-    }
+    
 }
 
 const container = {
@@ -44,8 +42,8 @@ const grid = {
 
 const typography = {
   display: 'block',
-  marginBlockStart: '1em',
-  marginBlockEnd: '1em',
+  marginBlockStart: '0.5em',
+  marginBlockEnd: '0.5em',
   marginInlineStart: '0px',
   marginInlineEnd: '0px',
   color: 'rgba(33,33,33,.75)'
@@ -54,6 +52,23 @@ const typography = {
 const btnbase = {
   width: 'auto',
   height: 'auto'
+}
+
+
+const gridimg = {
+  backgroundColor: 'rgba(white)', // farbe = 0,0,0,.1
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: '.875rem',
+  zIndex: 'tooltip',
+  left: '66%',
+}
+
+const gameimg = {
+  display: 'block',
+  width: '9rem',
+  height: 'auto',
 }
 
 function Options() {
@@ -179,7 +194,7 @@ function Options() {
                 </Grid>
                 <Grid item xs={4}>
                   <FormControl fullWidth>
-                      <InputLabel id="demo-multiple-name-label">Leserinteresse</InputLabel>
+                      <InputLabel id="demo-multiple-name-label">Filter</InputLabel>
                       <Select
                         labelId="demo-multiple-name-label"
                         id="demo-multiple-name"
@@ -380,56 +395,63 @@ function Spiele() {
   return (
         <Box component="section" sx={box}>
           <Container sx={container}>
-            <Grid container sx={grid} rowSpacing={5}>
-              <Grid item xs={12}>
-                <Options/>
-              </Grid>
-              <Grid item xs={12}>
-                <Box sx={{ height: 150, backgroundColor: "#f2f7fc", pl: 5, pr: 5 }}>
-                        <Typography variant="subtitle1" sx={{ pt: 2, pb: 2 }}>Beste PC-Spiele: Liste der beliebtesten Games</Typography>
-                        <Typography variant="h6">In dieser Bestenliste findest du die aktuell angesagtesten PC-Spiele nach Leserinteresse auf Gameeye.com inklusive Wertung und Release.</Typography>
-                </Box>
-              </Grid>
-              <Grid item xs={12}>
-                  <Grid sx={grid} container spacing={12}>
-                    <Grid item sm={12} md={3}>
-                      <ButtonBase sx={btnbase}>
-                      <Box 
-                        component="img"
-                        src="https://images.cgames.de/images/gamestar/95/ultima-1-the-first-age-of-darkness_2290285.jpg"
-                        alt="suitcase"
-                        sx={box.img}
-                      />
-                      </ButtonBase>
-                    </Grid>
-                    <Grid item sm={12} md={9}>
-                      <Box sx={grid.box}>
-                        <Typography variant="subtitle1" sx={{ paddingBottom: 2 }}>
-                          Ultima 1: The First Age of Darkness
-                        </Typography>
-                        <TextField
-                          disabled 
-                          id="outlined-read-only-input"
-                          label="Platform"
-                          defaultValue="PC"
-                          InputProps={{
-                            readOnly: true,
-                          }}
-                          sx={{ width: 'auto' }}
-                        />
-                        <Typography sx={typography}>
-                          Genre: Rollenspiel
-                        </Typography>
-                        <Typography sx={typography}>
-                          Entwickler: Origin Systems
-                        </Typography>
-                        <Typography sx={typography}>
-                          Release: 02.09.1980 (PC)
-                        </Typography>
-                      </Box>
-                    </Grid>
+              <Grid container sx={grid} rowSpacing={5}>
+                <Grid item xs={12}>
+                  <Options/>
+                </Grid>
+                <Grid item xs={12}>
+                  <Box sx={{ height: 'auto', backgroundColor: "#f2f7fc", pl: 5, pr: 5, mr: 3 }}>
+                          <Typography variant="subtitle1" sx={{ pt: 3, pb: 2 }}>Beste PC-Spiele: Liste der beliebtesten Games</Typography>
+                          <Typography variant="h6" sx={{ pb: 2 }}>In dieser Bestenliste findest du die aktuell angesagtesten PC-Spiele nach Leserinteresse auf Gameeye.com inklusive Wertung und Release.</Typography>
+                  </Box>
+                </Grid>
+                <Grid item container direction="row">
+                  <Grid item xs={8}>
+                      <Grid sx={grid} container>
+                        <Grid item xs={4} md={3}>
+                          <ButtonBase sx={btnbase}>
+                            <Box 
+                              component="img"
+                              src="https://images.cgames.de/images/gamestar/95/ultima-1-the-first-age-of-darkness_2290285.jpg"
+                              alt="suitcase"
+                              sx={gameimg}
+                            />
+                          </ButtonBase>
+                        </Grid>
+                        <Grid item xs={8} md={9}>
+                          <Box sx={grid.box}>
+                            <Typography variant="subtitle1" sx={{ paddingBottom: 2, fontSize: 20 }}>
+                              Ultima 1: The First Age of Darkness
+                            </Typography>
+                            <TextField
+                              disabled 
+                              id="outlined-read-only-input"
+                              label="Platform"
+                              defaultValue="PC"
+                              InputProps={{
+                                readOnly: true,
+                              }}
+                              sx={{ width: 'auto' }}
+                            />
+                            <Typography sx={typography}>
+                              Genre: Rollenspiel
+                            </Typography>
+                            <Typography sx={typography}>
+                              Entwickler: Origin Systems
+                            </Typography>
+                            <Typography sx={typography}>
+                              Release: 02.09.1980 (PC)
+                            </Typography>
+                          </Box>
+                        </Grid>
+                      </Grid>
                   </Grid>
-              </Grid>
+                  <Grid item sx={gridimg} md={4}>
+                        <Box sx={{flex: 1, display: { xs: 'none', md: 'flex' }}}>
+                            <AdGames/>
+                        </Box>    
+                  </Grid>
+                </Grid>
             </Grid>
           </Container>
         </Box>

@@ -8,7 +8,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import ImageIcon from '@mui/icons-material/Image';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import AdGameList from './AdNewsList/AdGameList';
+import AdGameList from '../AdNewsList/AdGameList';
 
 const box = {
     flexGrow: 1,

@@ -93,8 +93,6 @@ function DayNewsList() {
                     </Container>
                 </Grid>
             </Grid>
-
-
     </Box>
   );
 }

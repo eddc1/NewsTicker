@@ -2,7 +2,7 @@ import { Box, ButtonBase, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../../../components/Typography';
-import AdTopNews from './AdNewsList/AdTopNews';
+import AdTopNews from '../AdNewsList/AdTopNews';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const box = {

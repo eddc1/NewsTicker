@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../../../components/Typography';
 import DayNewsList from './DayNewsList';
-import AdNewsTicker from './AdNewsList/AdNewsTicker';
+import AdNewsTicker from '../AdNewsList/AdNewsTicker';
 
 const box = {
     flexGrow: 1,

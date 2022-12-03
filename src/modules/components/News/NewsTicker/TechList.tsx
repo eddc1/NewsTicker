@@ -7,7 +7,7 @@ import HardwareIcon from '@mui/icons-material/Hardware';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DiamondIcon from '@mui/icons-material/Diamond';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import AdTechList from './AdNewsList/AdTechList';
+import AdTechList from '../AdNewsList/AdTechList';
 
 const box = {
     flexGrow: 1,
