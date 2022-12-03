@@ -105,8 +105,8 @@ const topnews = {
             alignItems: 'center',
         },
         basebutton: {
-            width: '100%',
-            height: 'auto',
+            width: '275px',
+            height: '154px',
             backgroundColor: 'rgba(0,0,0,.1)',
             display: 'flex',
             justifyContent: 'center',
@@ -150,14 +150,14 @@ function Cryptoubersicht() {
                                 <ButtonBase sx={btnbase}>
                                 <Box 
                                     component="img"
-                                    src="https://images.cgames.de/images/gamestar/210/need-for-speed-unbound-kolumne_6199568.jpg"
+                                    src="https://helios-i.mashable.com/imagery/articles/04ldy4kWWpLv9ccOUPseqIo/hero-image.fill.size_1248x702.v1647386540.jpg"
                                     alt="suitcase"
                                     sx={box.button}
                                     />
                                 <Box component="span" sx={imgtext}>
                                     <Box component="span" sx={imgtext.box}>
                                         <Box sx={imgtext.text}>
-                                            <Typography variant='body1' sx={imgtext.typography} color="white">Need for Speed war mir 20 Jahre lang egal, aber dann kam Unbound</Typography>
+                                            <Typography variant='body1' sx={imgtext.typography} color="white">So entwickeln sich Bitcoin, Litecoin & Co am Samstagmittag am Kryptomarkt</Typography>
                                         </Box>
                                     </Box>
                                 </Box>
@@ -222,49 +222,49 @@ function Cryptoubersicht() {
 
 const itemData = [
     {
-        img: 'https://images.cgames.de/images/gamestar/256/gs-kostenlos-am-wochenende_6197970.jpg',
-        title: 'Kostenlos bei Steam und Epic: Am langen Wochenende sind 8 Spiele gratis',
-        text: 'Diese Woche gibt es besonders viele spannende Gratis-Angebote: Rennspiele, MMOs, Shooter und mehr. Wir haben die Übersicht für euch.'
+        img: 'https://i.pinimg.com/736x/c8/6c/5b/c86c5bc205beb89a815a84076c023ec9.jpg',
+        title: 'FTX-Insolvenz und Bitcoin-Einbruch: El Salvador droht wohl Staatsbankrott',
+        text: 'El Salvadors Präsident Nayib Bukele hat den Bitcoin in dem mittelamerikanischen Staat zum gesetzlichen Zahlungsmittel gemacht. Doch das umstrittene Experiment könnte schlimme Folgen haben.'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/koste…-vier-weitere-spiele-neu-gratis-games_6197025.jpg',
-        title: 'Disco Elysium: Sorge um Sequel, wichtige Entwickler wohl nicht mehr dabei',
-        text: 'Offenbar haben sich mehrere wichtige Entwickler und das Studio ZA/UM getrennt - nicht im Guten, wie ein Gründungsmitglied behauptet. Viele Fans äußern Sorgen.'
+        img: 'https://images.finanzen.net/mediacenter/ratgeber/artikelbilder/blockchain-investment-investieren-in-blockchain-technologie-ratgeber-tastatur-kette-blockchain-660.jpg',
+        title: 'So könnte das Blockchain-Spiel Dark Forest die Gaming-Industrie revolutionieren',
+        text: 'Dark Forest ist ein auf der Blockchain basierendes Echtzeit-Strategie Spiel. Das Spiel zeigt die vielfältige Nutzung der Blockchain auf. Könnte das die Zukunft des Gaming werden?'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/gs-stadia-wird-beendet_6197841.jpg',
-        title: 'tadia am Ende: Googles milliardenschwerer Spieledienst wird eingestellt, alle Käufe erstattet',
-        text: 'Gerade mal drei Jahre gab es Google Stadia, jetzt wurde verkündet: Der Dienst wird 2023 endgültig beendet.'
+        img: 'https://www.btc-echo.de/wp-content/uploads/2022/11/shutterstock_1716080197-scaled-e1669810599624-1536x845.jpg',
+        title: 'Krypto-Investment – Jetzt oder nie?',
+        text: 'Wer in den Krypto-Markt einsteigen möchte, braucht die richtige Strategie. Wir erklären, wie du sie findest und welche Möglichkeiten es gibt, 1.000, 10.000 oder 100.000 Euro zu investieren.'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/intel-arc-a750-geldkoffer_6197862.jpg',
-        title: 'Arc Alchemist: Intel sagt Nvidia und AMD mit seinen Grafikkarten-Preisen den Kampf an',
-        text: 'Intels Grafikkarten erscheinen im Oktober. Und mit den jetzt veröffentlichten Preisen macht der Hersteller klar, dass man zumindest im Midrange-Segment ordentlich Staub aufwirbeln möchte.'
+        img: 'https://www.btc-echo.de/wp-content/uploads/2022/09/shutterstock_2159674393-2048x1365.webp',
+        title: 'Welche Arten von Stablecoins gibt es?',
+        text: 'Mittlerweile spielen Stablecoins eine zentrale Rolle beim Handel mit Kryptowährungen und erfreuen sich großer Beliebtheit. Doch nicht alle sind gleich.'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/beyond-good-nukem-gs_6197946.jpg',
-        title: 'Beyond Good & Evil 2 bricht einen traurigen Rekord, der für die Ewigkeit zu sein schien',
-        text: 'Duke Nukem Forever galt als heftigstes Beispiel für Vaporware. Jetzt bricht Beyond Good & Evil 2 den Rekord, den niemand brechen will.'
+        img: 'https://www.btc-echo.de/wp-content/uploads/2022/11/shutterstock_739665235-scaled-e1669737583519-2048x1300.jpg',
+        title: 'Miner kapitulieren – was bedeutet das für Bitcoin?',
+        text: 'Seit Mitte November sinkt die Hashrate rapide ab. Woran liegt das und was bedeutet das für Bitcoin?'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/gs-geheimtipps-september-2022_6198047.jpg',
-        title: 'Steam, Epic und Co.: Die besten Geheimtipps, die ihr im September vielleicht verpasst habt',
-        text: 'Wir sammeln spannende PC-Spiele des letzten Monats, die ihr auf keinen Fall übersehen solltet!'
+        img: 'https://www.btc-echo.de/wp-content/uploads/2022/11/shutterstock_2131895563-2048x1365.webp',
+        title: 'Ist Nexo der nächste große Crash-Kandidat?',
+        text: 'Nach dem FTX-Desaster richten sich die Augen auf den größten Lending-Dienst der Kryptobranche: Nexo. Die Zahlen geben Anlass zur Sorge.'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/fallout-ki-bild-misha-vozduh_6197820.jpg',
-        title: 'So habt ihr Fallout noch nie gesehen: KI verleiht 25 Jahre alten Figuren neuen Glanz',
-        text: 'Stable Diffusion AI generiert aus grobpixeligen Spielfiguren hochdetaillierte Bilder, die den Wunsch nach einem Remake des Rollenspiel-Klassikers wecken.'
+        img: 'https://www.btc-echo.de/wp-content/uploads/2022/11/shutterstock_2086238089-2048x1365.webp',
+        title: 'Aave stoppt Kreditvergabe für 17 Ethereum Token',
+        text: 'Aave, der größte Lender für Ethereum, zieht Konsequenzen aus Liquiditätsengpässen. Siebzehn Token sind betroffen.'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/gratis-bei-epic-runbow-drone-racing-league_6197781.jpg',
-        title: 'Gratis bei Epic: Für wen lohnen sich die zwei kostenlosen Spiele?',
-        text: 'Epic verschenkt mal wieder zwei Spiele. Mit Runbow und The Drone Racing League Simulator sind die Titel zwar diesmal etwas nischig, aber auf jeden Fall einen Blick wert!'
+        img: 'https://www.btc-echo.de/wp-content/uploads/2022/11/shutterstock_792061711-2-scaled-e1669388791105-2048x1362.jpg',
+        title: 'Welche Industrie-Anwendungsfälle hat das Bitcoin-Lightning-Netzwerk?',
+        text: 'Im vierten Teil der Bitcoin-Lightning-Artikelreihe geht es um die eigentlichen Use Cases des blitzschnellen Zahlungssystems. Welche Industrien können besonders davon profitieren?'
     },
     {
-        img: 'https://images.cgames.de/images/gamestar/256/intel-arc-a750-geldkoffer_6197862.jpg',
-        title: 'Arc Alchemist: Intel sagt Nvidia und AMD mit seinen Grafikkarten-Preisen den Kampf an',
-        text: 'Intels Grafikkarten erscheinen im Oktober. Und mit den jetzt veröffentlichten Preisen macht der Hersteller klar, dass man zumindest im Midrange-Segment ordentlich Staub aufwirbeln möchte.'
+        img: 'https://www.btc-echo.de/wp-content/uploads/2022/11/shutterstock_1936662070-2048x1365.webp',
+        title: 'Gouverneur von Texas bekräftigt Unterstützung für Bitcoin',
+        text: 'Der texanische Gouverneur erkennt das Innovationspotenzial Bitcoins an und plant, seinen Bundesstaat zum Krypto-Zentrum zu entwickeln.'
     },
   ];
 
