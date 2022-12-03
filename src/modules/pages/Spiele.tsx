@@ -406,7 +406,7 @@ function Spiele() {
                   </Box>
                 </Grid>
                 <Grid item container direction="row">
-                  <Grid item xs={8}>
+                  <Grid item xs={12} md={8}>
                       <Grid sx={grid} container>
                         <Grid item xs={4} md={3}>
                           <ButtonBase sx={btnbase}>
@@ -418,7 +418,7 @@ function Spiele() {
                             />
                           </ButtonBase>
                         </Grid>
-                        <Grid item xs={8} md={9}>
+                        <Grid item xs={7} md={9}>
                           <Box sx={grid.box}>
                             <Typography variant="subtitle1" sx={{ paddingBottom: 2, fontSize: 20 }}>
                               Ultima 1: The First Age of Darkness
