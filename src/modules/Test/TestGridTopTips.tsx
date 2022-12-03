@@ -3,7 +3,7 @@ import { Theme } from '@mui/material/styles';
 import { SxProps } from '@mui/system';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Typography from '../components/Typography';
+import Typography from '../components/theme/Typography';
 import { Container, ButtonBase } from '@mui/material';
 
 const box = {

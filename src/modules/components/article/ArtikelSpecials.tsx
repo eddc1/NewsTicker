@@ -1,7 +1,7 @@
 import { Box, ButtonBase, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../Typography';
+import Typography from '../theme/Typography';
 import AdArtikelTest from './AdArtikel/AdArtikelTest';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import AdArtikelSpecials from './AdArtikel/AdArtikelSpecials';

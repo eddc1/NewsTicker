@@ -1,7 +1,7 @@
 import { Box, ButtonBase, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../components/Typography';
+import Typography from '../components/theme/Typography';
 import VideosToday from '../components/Videos/VideosToday';
 import VideosHead from '../components/Videos/VideosHead';
 import AdVideosToday from '../components/Videos/AdVideosToday';

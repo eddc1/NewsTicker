@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Typography from '../components/Typography';
+import Typography from '../components/theme/Typography';
 import { styled, alpha } from '@mui/material/styles';
 import { Box, Button, Grid, Container, InputBase } from '@mui/material';
 import {

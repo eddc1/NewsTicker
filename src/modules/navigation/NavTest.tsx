@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import Logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
-import Typography from './Typography';
+import Typography from '../components/theme/Typography';
 
 const pages = ["Spiele", "News", "Videos", "Artikel", "Tech", "Crypto"]
 

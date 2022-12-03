@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../Typography';
+import Typography from '../theme/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';

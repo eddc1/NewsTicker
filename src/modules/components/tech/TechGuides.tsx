@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import Typography from '../Typography';
+import Typography from '../theme/Typography';
 
 const mainContainer = {
     display: 'flex, block',
