@@ -15,19 +15,13 @@ const mainContainer = {
     marginRight: 'auto',
     paddingTop: '4rem',
     fontFamily: 'Arial',
-    maxWidth: '105ch',
     position: 'relative' 
 }
 
 const box = {
     flexGrow: 1,
-    width: '100%',
     overflow: 'hidden',
     paddingBottom: 10,
-    margin: 'auto',
-    maxWidth: '100%',
-    justifyContent: 'center',
-    justifyItem: 'center',
         button: {
         width: '100%',
         height: 'auto',
@@ -52,7 +46,7 @@ const daynewslist = {
 function Videos() {
   return (
     <Box sx={mainContainer}> 
-        <Box
+        <Container
         component="section"
         sx={box}>
             <Box>
@@ -70,7 +64,7 @@ function Videos() {
                         </Grid>
                     </Grid>
                 </Grid>
-        </Box>
+        </Container>
     </Box>
   );
 }
