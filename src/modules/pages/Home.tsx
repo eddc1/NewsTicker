@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Container, Box, Typography } from '@mui/material';
+import { Container, Box } from '@mui/material';
 import Gridhead from '../components/homepage/Gridhead';
 import GridTopTips from '../components/homepage/GridTopTips';
 import TabsList from '../components/homepage/TabsList';
