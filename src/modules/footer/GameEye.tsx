@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Container, Box, Typography } from '@mui/material';
+import { Container, Box } from '@mui/material';
 import Gridhead from '../components/homepage/Gridhead';
 
 
