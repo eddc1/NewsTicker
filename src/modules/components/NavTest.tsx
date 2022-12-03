@@ -103,7 +103,7 @@ export default function PrimarySearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar sx={{bgcolor: 'primary.dark' }} position="static">
-        <Toolbar sx={{ justifyContent: 'space-between', marginRight: 6, marginLeft: 6 }} >
+        <Toolbar sx={{  justifyItems: 'center', justifyContent: 'space-between', marginRight: 6, marginLeft: 6 }} >
           <IconButton disableRipple size="small" sx={{ "&.MuiButtonBase-root:hover": { bgcolor: "transparent" }}}>
             <Link to="/">
                 <Box component="img" sx={{width: 140, height: 50}} alt="logo-gameeye" src={Logo}/>

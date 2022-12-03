@@ -6,7 +6,7 @@ const rawTheme = createTheme({
     primary: {
       light: 'withe',
       main: '#28282a',
-      dark: indigo[700],
+      dark: '#303F9F',
       contrastText: '#fff',
     },
     secondary: {

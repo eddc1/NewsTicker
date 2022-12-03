@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <Box>
-        <Container sx={{display: 'flex, block', justifyContent: 'center', width: '100%', marginLeft: 'auto', boxSizing: 'border-box',  marginRight: 'auto', paddingLeft: '16px', paddingRight: '16px', paddingTop: '4rem', fontFamily: 'Arial', maxWidth: '105ch', position: 'relative' }}> 
+        <Container sx={{display: 'flex, block', justifyContent: 'center', width: '100%', marginLeft: 'auto', boxSizing: 'border-box',  marginRight: 'auto', paddingLeft: '16px', paddingRight: '16px', fontFamily: 'Arial', maxWidth: '105ch', position: 'relative' }}> 
           <Gridhead/>
           <GridTopTips/>
           <TabsList/>
