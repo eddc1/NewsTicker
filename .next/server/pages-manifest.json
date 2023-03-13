@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/Videos": "pages/Videos.js",
+  "/Artikel": "pages/Artikel.js",
+  "/News": "pages/News.js",
+  "/": "pages/index.js",
+  "/Crypto": "pages/Crypto.js",
+  "/Tech": "pages/Tech.js",
+  "/Spiele": "pages/Spiele.js"
+}
