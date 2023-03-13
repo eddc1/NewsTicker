@@ -1,2 +1,2 @@
 # gameeye
- Eine Redakteur Webseite über Spiele und Kryptowährungen
+ Eine Redakteur Webseite über Spiele und Kryptowährungen!
