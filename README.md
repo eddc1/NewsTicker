@@ -1,4 +1,4 @@
-# Gameeye Webseite
+# NewsTicker Webseite
 
 Dies ist eine Webseite, die Informationen zu neuen Technologien im Bereich Gaming, Hardware und Kryptowährungen bietet. Die Webseite wurde mit React.js, TypeScript und Material UI erstellt.
 
@@ -8,13 +8,14 @@ Die Webseite enthält einen Newsticker, der die neuesten Nachrichten und Entwick
 ## Technologien
 - React.js
 - TypeScript
+- Next.js
 - Material UI
 
 ## Installation
 Um das Projekt lokal auszuführen, benötigen Sie Node.js. Folgen Sie diesen Schritten:
 
-1. Klonen Sie das Repository: `git clone https://github.com/eddc1/gameeye.git`
-2. Navigieren Sie zum Repository-Ordner: `cd gameeye`
+1. Klonen Sie das Repository: `git clone https://github.com/eddc1/NewsTicker.git`
+2. Navigieren Sie zum Repository-Ordner: `cd NewsTicker`
 3. Installieren Sie die erforderlichen Pakete: `npm install`
 4. Starten Sie den Entwicklungs-Server: `npm start`
 
