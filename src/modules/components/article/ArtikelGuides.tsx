@@ -157,7 +157,7 @@ function ArtikelGuides() {
                                 <Box component="span" sx={imgtext}>
                                     <Box component="span" sx={imgtext.box}>
                                         <Box sx={imgtext.text}>
-                                            <Typography variant='body1' sx={imgtext.typography} color="white">SAlexa umbenennen: So ändert ihr den Namen eures Echo-Gerätes</Typography>
+                                            <Typography variant='body1' sx={imgtext.typography} color="white">Alexa umbenennen: So ändert ihr den Namen eures Echo-Gerätes</Typography>
                                         </Box>
                                     </Box>
                                 </Box>
