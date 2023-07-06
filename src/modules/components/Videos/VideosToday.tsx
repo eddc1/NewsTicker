@@ -162,7 +162,7 @@ const itemData = [
     },
     {
         img: 'https://images.cgames.de/images/gamestar/256/gs-stadia-wird-beendet_6197841.jpg',
-        title: 'tadia am Ende: Googles milliardenschwerer Spieledienst wird eingestellt, alle Käufe erstattet',
+        title: 'Stadia am Ende: Googles milliardenschwerer Spieledienst wird eingestellt, alle Käufe erstattet',
         text: 'Gerade mal drei Jahre gab es Google Stadia, jetzt wurde verkündet: Der Dienst wird 2023 endgültig beendet.'
     },
     {
