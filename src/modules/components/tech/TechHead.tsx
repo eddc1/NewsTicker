@@ -177,8 +177,8 @@ const itemData = [
       title: 'Lenovo ThinkBook Plus Gen 3 im Test: Luxus dank mehr Bildfläche',
     },
     {
-      img: 'https://images.cgames.de/images/gamestar/256/roccat-advertorial-titel-02_6199842.jpg',
-      title: 'Lenovo ThinkBook Plus Gen 3 im Test: Luxus dank mehr Bildfläche',
+      img: 'https://images.cgames.de/images/gamestar/256/galaxy-6-teaser_6243306.jpg',
+      title: 'Samsung: Die Galaxy Watch 6 Classic ist wohl nur paar Millimeter von der Apple Watch Ultra entfernt',
     },
   ];
 
